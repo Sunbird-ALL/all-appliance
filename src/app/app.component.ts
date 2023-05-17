@@ -12,11 +12,11 @@ export class AppComponent {
   title = 'speak-with-me';
 
   ngOnInit() {
-    $(document).ready(function() {
-      $('.btnNext').click(function(){
-        $('.active').next('.nav-link').trigger('click');
-        });
-    });
+    // $(document).ready(function() {
+    //   $('.btnNext').click(function(){
+    //     $('.active').next('.nav-link').trigger('click');
+    //     });
+    // });
  }
  public getFingerPrintJsId = () => {
     const fpDetails_v2 = localStorage.getItem("did");
