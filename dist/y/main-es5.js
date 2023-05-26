@@ -41,7 +41,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-    __webpack_exports__["default"] = "<header>\n  <nav class=\"level-nav\">\n  </nav>\n</header>\n<section class=\"mt-3\">\n  <div class=\"container-fluid\">\n      <div class=\"accordion\" id=\"accordionPanelsStayOpenExample\">\n          <div class=\"accordion-item\">\n            <h2 class=\"accordion-header w-25 ms-auto\">\n              <button class=\"accordion-button cl fw-700\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#panelsStayOpen-collapseOne\" aria-expanded=\"true\" aria-controls=\"panelsStayOpen-collapseOne\">Speak with Me\n              </button>\n            </h2>\n              <div id=\"panelsStayOpen-collapseOne\" class=\"accordion-collapse collapse show\">\n                  <div class=\"accordion-body bg-color mt--68\">\n                      <div class=\"d-flex align-items-start row-dic\">\n                          <div class=\"nav flex-column nav-pills mt-68 w-23 bg-border\" id=\"v-pills-tab\" role=\"tablist\" aria-orientation=\"vertical\">\n                              <button class=\"nav-link active text-left fs-14 text-black\" id=\"v-pills-home-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-home\" type=\"button\" role=\"tab\" aria-controls=\"v-pills-home\" aria-selected=\"true\">Explore & Learn</button>\n                              <button class=\"nav-link text-left fs-14 text-black\" id=\"v-pills-profile-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-profile\" type=\"button\" role=\"tab\" aria-controls=\"v-pills-profile\" aria-selected=\"false\">Play & Learn</button>\n                              <button class=\"nav-link text-left fs-14 text-black\" id=\"v-pills-messages-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-messages\" type=\"button\" role=\"tab\" aria-controls=\"v-pills-messages\" aria-selected=\"false\">Learn with a Friend</button>\n                              <button class=\"nav-link text-left fs-14 text-black\" id=\"v-pills-video-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-video\" type=\"button\" role=\"tab\" aria-controls=\"v-pills-video\" aria-selected=\"false\">Video help</button>\n                          </div>\n                              <div class=\"tab-content bg-white w-74\" id=\"v-pills-tabContent\">\n                              <div class=\"tab-pane p-4 fade show active\" id=\"v-pills-home\" role=\"tabpanel\" aria-labelledby=\"v-pills-home-tab\" tabindex=\"0\">\n                               <iframe src=\"/assets/sb-all/index.html#/proto3/all?source=/assets/sb-all/db/proto3.json\" frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                              </div>\n                              <div class=\"tab-pane fade p-4 \" id=\"v-pills-profile\" role=\"tabpanel\" aria-labelledby=\"v-pills-profile-tab\" tabindex=\"0\">\n                                <iframe src=\"/assets/sb-all/index.html#/proto4/all?source=/assets/sb-all/db/proto4.json\" frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                              </div>\n                              <div class=\"tab-pane fade p-4\" id=\"v-pills-messages\" role=\"tabpanel\" aria-labelledby=\"v-pills-messages-tab\" tabindex=\"0\">\n                                <iframe src=\"/assets/games/index.html\" frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                              </div>\n                              <div class=\"tab-pane fade p-4\" id=\"v-pills-video\" role=\"tabpanel\" aria-labelledby=\"v-pills-video-tab\" tabindex=\"0\">\n                                <iframe src=\"/assets/explore_and_learn.mp4\" frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                              </div>\n                          </div>\n                      </div>\n                  </div>\n              </div>\n          </div>\n      </div>\n  </div>\n</section>\n\n<!-- <div class=\"tab-pane active flex-center w-75 mb-5 mt-3\" id=\"tab1\">\n  <a class=\"btnNext cursor px-5 py-3 rounded bg-primary border-0 text-white fs-4\">Next</a>\n</div> -->\n\n<footer>\n  <div class=\"footer-level-img footer\" style=\"position:relative!important\"></div>\n  <!-- hitwebcounter Code START -->\n  <span>Visitors Counter: </span>\n  <!-- Start of CuterCounter Code -->\n  <a href=\"https://www.cutercounter.com/\" target=\"_blank\"><img src=\"https://www.cutercounter.com/hits.php?id=hemxnakfa&nd=6&style=3\" border=\"0\" alt=\"hit counter\"></a>\n  <!-- End of CuterCounter Code -->\n  <div>Device Id: {{this.getFingerPrintJsId()}}</div>\n</footer>";
+    __webpack_exports__["default"] = "<router-outlet></router-outlet>";
+
+    /***/
+  },
+
+  /***/"./node_modules/raw-loader/dist/cjs.js!./src/app/hindi-version/hindi-version.component.html":
+  /*!**************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/hindi-version/hindi-version.component.html ***!
+    \**************************************************************************************************/
+  /*! exports provided: default */
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHindiVersionHindiVersionComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+    __webpack_exports__["default"] = "<header>\n    <nav class=\"level-nav\">\n    </nav>\n</header>\n<section class=\"mt-3\">\n    <div class=\"container-fluid\">\n        <div class=\"accordion\" id=\"accordionPanelsStayOpenExample\">\n            <div class=\"accordion-item\">\n                <h2 class=\"accordion-header w-25 ms-auto\">\n                    <button class=\"accordion-button cl fw-700\" type=\"button\" data-bs-toggle=\"collapse\"\n                        data-bs-target=\"#panelsStayOpen-collapseOne\" aria-expanded=\"true\"\n                        aria-controls=\"panelsStayOpen-collapseOne\">Speak with Me\n                    </button>\n                </h2>\n                <div id=\"panelsStayOpen-collapseOne\" class=\"accordion-collapse collapse show\">\n                    <div class=\"accordion-body bg-color mt--68\">\n                        <div class=\"d-flex align-items-start row-dic\">\n                            <div class=\"nav flex-column nav-pills mt-68 w-23 bg-border\" id=\"v-pills-tab\" role=\"tablist\"\n                                aria-orientation=\"vertical\">\n                                <button (click)=\"showExploreandLearn()\"\n                                    class=\"nav-link active text-left fs-14 text-black\" id=\"v-pills-home-tab\"\n                                    data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-home\" type=\"button\" role=\"tab\"\n                                    aria-controls=\"v-pills-home\" aria-selected=\"true\">Explore & Learn</button>\n                                <button (click)=\"showLearnandplay()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-profile-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-profile\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-profile\" aria-selected=\"false\">Play\n                                    & Learn</button>\n                                <button (click)=\"showPlaygame()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-messages-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-messages\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-messages\"\n                                    aria-selected=\"false\">Learn with a Friend</button>\n                                <button (click)=\"showVideoHelp()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-video-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-video\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-video\" aria-selected=\"false\">Video\n                                    help</button>\n                            </div>\n                            <div class=\"tab-content bg-white w-74\" id=\"v-pills-tabContent\">\n                                <div *ngIf=\"exploreandlearn\" class=\"tab-pane p-4 fade show active\" id=\"v-pills-home\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-home-tab\" tabindex=\"0\">\n                                    <iframe\n                                        src=\"/assets/hindi-all/index.html#/proto3/all?source=/assets/hindi-all/db/proto3.json\"\n                                        frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"learnandplay\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-profile\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-profile-tab\" tabindex=\"0\">\n                                    <iframe\n                                        src=\"/assets/hindi-all/index.html#/proto4/all?source=/assets/hindi-all/db/proto4.json\"\n                                        frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"playgame\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-messages\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-messages-tab\" tabindex=\"0\">\n                                    <iframe src=\"/assets/games/index.html\" frameborder=\"0\" height=\"600px\"\n                                        width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"videohelp\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-video\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-video-tab\" tabindex=\"0\">\n                                    <iframe src=\"/assets/explore_and_learn.mp4\" frameborder=\"0\" height=\"600px\"\n                                        width=\"100%\"></iframe>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n<!-- <div class=\"tab-pane active flex-center w-75 mb-5 mt-3\" id=\"tab1\">\n  <a class=\"btnNext cursor px-5 py-3 rounded bg-primary border-0 text-white fs-4\">Next</a>\n</div> -->\n\n<footer>\n    <div class=\"footer-level-img footer\" style=\"position:relative!important\"></div>\n    <!-- hitwebcounter Code START -->\n    <span>Visitors Counter: </span>\n    <!-- Start of CuterCounter Code -->\n    <a href=\"https://www.cutercounter.com/\" target=\"_blank\"><img\n            src=\"https://www.cutercounter.com/hits.php?id=hemxnakfa&nd=6&style=3\" border=\"0\" alt=\"hit counter\"></a>\n    <!-- End of CuterCounter Code -->\n    <div>Device Id: {{this.getFingerPrintJsId()}}</div>\n</footer>";
+
+    /***/
+  },
+
+  /***/"./node_modules/raw-loader/dist/cjs.js!./src/app/tamil-version/tamil-version.component.html":
+  /*!**************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/tamil-version/tamil-version.component.html ***!
+    \**************************************************************************************************/
+  /*! exports provided: default */
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppTamilVersionTamilVersionComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+    __webpack_exports__["default"] = "<header>\n    <nav class=\"level-nav\">\n    </nav>\n</header>\n<section class=\"mt-3\">\n    <div class=\"container-fluid\">\n        <div class=\"accordion\" id=\"accordionPanelsStayOpenExample\">\n            <div class=\"accordion-item\">\n                <h2 class=\"accordion-header w-25 ms-auto\">\n                    <button class=\"accordion-button cl fw-700\" type=\"button\" data-bs-toggle=\"collapse\"\n                        data-bs-target=\"#panelsStayOpen-collapseOne\" aria-expanded=\"true\"\n                        aria-controls=\"panelsStayOpen-collapseOne\">Speak with Me\n                    </button>\n                </h2>\n                <div id=\"panelsStayOpen-collapseOne\" class=\"accordion-collapse collapse show\">\n                    <div class=\"accordion-body bg-color mt--68\">\n                        <div class=\"d-flex align-items-start row-dic\">\n                            <div class=\"nav flex-column nav-pills mt-68 w-23 bg-border\" id=\"v-pills-tab\" role=\"tablist\"\n                                aria-orientation=\"vertical\">\n                                <button (click)=\"showExploreandLearn()\"\n                                    class=\"nav-link active text-left fs-14 text-black\" id=\"v-pills-home-tab\"\n                                    data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-home\" type=\"button\" role=\"tab\"\n                                    aria-controls=\"v-pills-home\" aria-selected=\"true\">Explore & Learn</button>\n                                <button (click)=\"showLearnandplay()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-profile-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-profile\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-profile\" aria-selected=\"false\">Play\n                                    & Learn</button>\n                                <button (click)=\"showPlaygame()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-messages-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-messages\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-messages\"\n                                    aria-selected=\"false\">Learn with a Friend</button>\n                                <button (click)=\"showVideoHelp()\" class=\"nav-link text-left fs-14 text-black\"\n                                    id=\"v-pills-video-tab\" data-bs-toggle=\"pill\" data-bs-target=\"#v-pills-video\"\n                                    type=\"button\" role=\"tab\" aria-controls=\"v-pills-video\" aria-selected=\"false\">Video\n                                    help</button>\n                            </div>\n                            <div class=\"tab-content bg-white w-74\" id=\"v-pills-tabContent\">\n                                <div *ngIf=\"exploreandlearn\" class=\"tab-pane p-4 fade show active\" id=\"v-pills-home\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-home-tab\" tabindex=\"0\">\n                                    <iframe\n                                        src=\"/assets/sb-all/index.html#/proto3/all?source=/assets/sb-all/db/proto3.json\"\n                                        frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"learnandplay\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-profile\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-profile-tab\" tabindex=\"0\">\n                                    <iframe\n                                        src=\"/assets/sb-all/index.html#/proto4/all?source=/assets/sb-all/db/proto4.json\"\n                                        frameborder=\"0\" height=\"600px\" width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"playgame\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-messages\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-messages-tab\" tabindex=\"0\">\n                                    <iframe src=\"/assets/games/index.html\" frameborder=\"0\" height=\"600px\"\n                                        width=\"100%\"></iframe>\n                                </div>\n                                <div *ngIf=\"videohelp\" class=\"tab-pane fade p-4 show active\" id=\"v-pills-video\"\n                                    role=\"tabpanel\" aria-labelledby=\"v-pills-video-tab\" tabindex=\"0\">\n                                    <iframe src=\"/assets/explore_and_learn.mp4\" frameborder=\"0\" height=\"600px\"\n                                        width=\"100%\"></iframe>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n\n<!-- <div class=\"tab-pane active flex-center w-75 mb-5 mt-3\" id=\"tab1\">\n  <a class=\"btnNext cursor px-5 py-3 rounded bg-primary border-0 text-white fs-4\">Next</a>\n</div> -->\n\n<footer>\n    <div class=\"footer-level-img footer\" style=\"position:relative!important\"></div>\n    <!-- hitwebcounter Code START -->\n    <span>Visitors Counter: </span>\n    <!-- Start of CuterCounter Code -->\n    <a href=\"https://www.cutercounter.com/\" target=\"_blank\"><img\n            src=\"https://www.cutercounter.com/hits.php?id=hemxnakfa&nd=6&style=3\" border=\"0\" alt=\"hit counter\"></a>\n    <!-- End of CuterCounter Code -->\n    <div>Device Id: {{this.getFingerPrintJsId()}}</div>\n</footer>";
 
     /***/
   },
@@ -521,7 +553,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
     var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! @angular/router */"./node_modules/@angular/router/fesm2015/router.js");
-    var routes = [];
+    /* harmony import */
+    var _hindi_version_hindi_version_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ./hindi-version/hindi-version.component */"./src/app/hindi-version/hindi-version.component.ts");
+    /* harmony import */
+    var _tamil_version_tamil_version_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__( /*! ./tamil-version/tamil-version.component */"./src/app/tamil-version/tamil-version.component.ts");
+    var routes = [{
+      path: '',
+      component: _tamil_version_tamil_version_component__WEBPACK_IMPORTED_MODULE_4__["TamilVersionComponent"]
+    }, {
+      path: 'hi',
+      component: _hindi_version_hindi_version_component__WEBPACK_IMPORTED_MODULE_3__["HindiVersionComponent"]
+    }];
     var AppRoutingModule = /*#__PURE__*/_createClass(function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
     });
@@ -544,7 +586,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
-    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Roboto:wght@300;400&display=swap');\nbody , html{\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    background: #F5F5F5;\n    color: #000000;\n    font-family: 'Inter', sans-serif;\n    font-weight: 400;\n}\n.fs-14{\n    font-size: 14px;\n}\n.flex-center{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.fw-700{\n    font-weight: 700;\n}\n.cursor{\n    cursor: pointer;\n}\n.text-left{\n    text-align: start !important;\n}\na{\n    text-decoration: none !important;\n}\n.row-dic{\n    flex-direction: row-reverse !important;\n    justify-content: space-between;\n    \n}\n.cl{\n    background: #F2EEF4 !important;\n    color: #333333 !important;\n}\n.bg-color{\n    background: #F5F5F5;\n}\n.w-23{\n    width: 23%;\n}\n.mt--68{\n    margin-top: -68px !important;\n}\n.mt-68{\n    margin-top: 68px !important;\n}\n.w-74{\n    width: 74%;\n}\nh5, .h5 {\n    font-size: 1rem !important;\n}\n.nav-pills .nav-link.active{\n    background: #cbb1df !important;\n    color: #662D91 !important;\n    font-weight: 700 !important;\n    border-radius: unset !important;\n}\n.bg-border{\n    border: 1px solid #C8BAD2;\n    border-radius: 8px;\n    background-color: white;\n}\n.accordion-item{\n    border: none !important;\n}\n.accordion-button:not(.collapsed)::after{\n    content: \"\\F286\";\n    font-family: bootstrap-icons !important;\n    border-radius: 50% !important;\n    background: #662D91;\n    font-size: 18px;\n    border-radius: 50%;\n    height: 25px;\n    width: 25px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0;\n    color: #fff !important;\n}\n.accordion-button::after{\n    content: \"\\F286\";\n    font-family: bootstrap-icons !important;\n    border-radius: 50% !important;\n    background: #662D91;\n    font-size: 18px;\n    border-radius: 50%;\n    height: 25px;\n    width: 25px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0;\n    color: #fff !important;\n}\n.level-nav{\n    padding: 19px 0;\n    left: 0px;\n    top: 0px;\n    background: #662D91;\n    margin-bottom: 8px;\n}\n.accordion-item{\n    background: #F5F5F5;\n}\n.footer-level-img{\n    margin-top: 50px;\n    background-image: url('level-footer.png');\n    height: 474px;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: left;\n  }\n.footer{\n    display: flex;\n    justify-content: right;\n}\n/* .content{\n    position: absolute !important;\n    margin: 2%;\n    bottom: 2%;\n    color: #fff;\n} */\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0hBQXdIO0FBQ3hIO0lBQ0ksU0FBUztJQUNULFVBQVU7SUFDVixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLGNBQWM7SUFDZCxnQ0FBZ0M7SUFDaEMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLGdDQUFnQztBQUNwQztBQUNBO0lBQ0ksc0NBQXNDO0lBQ3RDLDhCQUE4Qjs7QUFFbEM7QUFDQTtJQUNJLDhCQUE4QjtJQUM5Qix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSwwQkFBMEI7QUFDOUI7QUFDQTtJQUNJLDhCQUE4QjtJQUM5Qix5QkFBeUI7SUFDekIsMkJBQTJCO0lBQzNCLCtCQUErQjtBQUNuQztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLHVDQUF1QztJQUN2Qyw2QkFBNkI7SUFDN0IsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFdBQVc7SUFDWCxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1Ysc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsdUNBQXVDO0lBQ3ZDLDZCQUE2QjtJQUM3QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGVBQWU7SUFDZixTQUFTO0lBQ1QsUUFBUTtJQUNSLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLHlDQUF1RDtJQUN2RCxhQUFhO0lBQ2IsNEJBQTRCO0lBQzVCLHNCQUFzQjtJQUN0Qix5QkFBeUI7RUFDM0I7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTs7Ozs7R0FLRyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RUIrR2FyYW1vbmQmZmFtaWx5PUludGVyJmZhbWlseT1Sb2JvdG86d2dodEAzMDA7NDAwJmRpc3BsYXk9c3dhcCcpO1xuYm9keSAsIGh0bWx7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmc6IDA7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBiYWNrZ3JvdW5kOiAjRjVGNUY1O1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnSW50ZXInLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG59XG4uZnMtMTR7XG4gICAgZm9udC1zaXplOiAxNHB4O1xufVxuLmZsZXgtY2VudGVye1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5mdy03MDB7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cbi5jdXJzb3J7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnRleHQtbGVmdHtcbiAgICB0ZXh0LWFsaWduOiBzdGFydCAhaW1wb3J0YW50O1xufVxuYXtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmUgIWltcG9ydGFudDtcbn1cbi5yb3ctZGlje1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3ctcmV2ZXJzZSAhaW1wb3J0YW50O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBcbn1cbi5jbHtcbiAgICBiYWNrZ3JvdW5kOiAjRjJFRUY0ICFpbXBvcnRhbnQ7XG4gICAgY29sb3I6ICMzMzMzMzMgIWltcG9ydGFudDtcbn1cbi5iZy1jb2xvcntcbiAgICBiYWNrZ3JvdW5kOiAjRjVGNUY1O1xufVxuLnctMjN7XG4gICAgd2lkdGg6IDIzJTtcbn1cbi5tdC0tNjh7XG4gICAgbWFyZ2luLXRvcDogLTY4cHggIWltcG9ydGFudDtcbn1cbi5tdC02OHtcbiAgICBtYXJnaW4tdG9wOiA2OHB4ICFpbXBvcnRhbnQ7XG59XG4udy03NHtcbiAgICB3aWR0aDogNzQlO1xufVxuaDUsIC5oNSB7XG4gICAgZm9udC1zaXplOiAxcmVtICFpbXBvcnRhbnQ7XG59XG4ubmF2LXBpbGxzIC5uYXYtbGluay5hY3RpdmV7XG4gICAgYmFja2dyb3VuZDogI2NiYjFkZiAhaW1wb3J0YW50O1xuICAgIGNvbG9yOiAjNjYyRDkxICFpbXBvcnRhbnQ7XG4gICAgZm9udC13ZWlnaHQ6IDcwMCAhaW1wb3J0YW50O1xuICAgIGJvcmRlci1yYWRpdXM6IHVuc2V0ICFpbXBvcnRhbnQ7XG59XG5cbi5iZy1ib3JkZXJ7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0M4QkFEMjtcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG4uYWNjb3JkaW9uLWl0ZW17XG4gICAgYm9yZGVyOiBub25lICFpbXBvcnRhbnQ7XG59XG4uYWNjb3JkaW9uLWJ1dHRvbjpub3QoLmNvbGxhcHNlZCk6OmFmdGVye1xuICAgIGNvbnRlbnQ6IFwiXFxGMjg2XCI7XG4gICAgZm9udC1mYW1pbHk6IGJvb3RzdHJhcC1pY29ucyAhaW1wb3J0YW50O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xuICAgIGJhY2tncm91bmQ6ICM2NjJEOTE7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBoZWlnaHQ6IDI1cHg7XG4gICAgd2lkdGg6IDI1cHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDA7XG4gICAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcbn1cbi5hY2NvcmRpb24tYnV0dG9uOjphZnRlcntcbiAgICBjb250ZW50OiBcIlxcRjI4NlwiO1xuICAgIGZvbnQtZmFtaWx5OiBib290c3RyYXAtaWNvbnMgIWltcG9ydGFudDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCUgIWltcG9ydGFudDtcbiAgICBiYWNrZ3JvdW5kOiAjNjYyRDkxO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgaGVpZ2h0OiAyNXB4O1xuICAgIHdpZHRoOiAyNXB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAwO1xuICAgIGNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XG59XG4ubGV2ZWwtbmF2e1xuICAgIHBhZGRpbmc6IDE5cHggMDtcbiAgICBsZWZ0OiAwcHg7XG4gICAgdG9wOiAwcHg7XG4gICAgYmFja2dyb3VuZDogIzY2MkQ5MTtcbiAgICBtYXJnaW4tYm90dG9tOiA4cHg7XG59XG4uYWNjb3JkaW9uLWl0ZW17XG4gICAgYmFja2dyb3VuZDogI0Y1RjVGNTtcbn1cbi5mb290ZXItbGV2ZWwtaW1ne1xuICAgIG1hcmdpbi10b3A6IDUwcHg7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vLi4vYXNzZXRzL2ltZy9sZXZlbC1mb290ZXIucG5nKTtcbiAgICBoZWlnaHQ6IDQ3NHB4O1xuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBsZWZ0O1xuICB9XG4gIC5mb290ZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHJpZ2h0O1xufVxuLyogLmNvbnRlbnR7XG4gICAgcG9zaXRpb246IGFic29sdXRlICFpbXBvcnRhbnQ7XG4gICAgbWFyZ2luOiAyJTtcbiAgICBib3R0b206IDIlO1xuICAgIGNvbG9yOiAjZmZmO1xufSAqLyJdfQ== */";
+    __webpack_exports__["default"] = "@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Roboto:wght@300;400&display=swap');\r\nbody , html{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    background: #F5F5F5;\r\n    color: #000000;\r\n    font-family: 'Inter', sans-serif;\r\n    font-weight: 400;\r\n}\r\n.fs-14{\r\n    font-size: 14px;\r\n}\r\n.flex-center{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n.fw-700{\r\n    font-weight: 700;\r\n}\r\n.cursor{\r\n    cursor: pointer;\r\n}\r\n.text-left{\r\n    text-align: start !important;\r\n}\r\na{\r\n    text-decoration: none !important;\r\n}\r\n.row-dic{\r\n    flex-direction: row-reverse !important;\r\n    justify-content: space-between;\r\n    \r\n}\r\n.cl{\r\n    background: #F2EEF4 !important;\r\n    color: #333333 !important;\r\n}\r\n.bg-color{\r\n    background: #F5F5F5;\r\n}\r\n.w-23{\r\n    width: 23%;\r\n}\r\n.mt--68{\r\n    margin-top: -68px !important;\r\n}\r\n.mt-68{\r\n    margin-top: 68px !important;\r\n}\r\n.w-74{\r\n    width: 74%;\r\n}\r\nh5, .h5 {\r\n    font-size: 1rem !important;\r\n}\r\n.nav-pills .nav-link.active{\r\n    background: #cbb1df !important;\r\n    color: #662D91 !important;\r\n    font-weight: 700 !important;\r\n    border-radius: unset !important;\r\n}\r\n.bg-border{\r\n    border: 1px solid #C8BAD2;\r\n    border-radius: 8px;\r\n    background-color: white;\r\n}\r\n.accordion-item{\r\n    border: none !important;\r\n}\r\n.accordion-button:not(.collapsed)::after{\r\n    content: \"\\F286\";\r\n    font-family: bootstrap-icons !important;\r\n    border-radius: 50% !important;\r\n    background: #662D91;\r\n    font-size: 18px;\r\n    border-radius: 50%;\r\n    height: 25px;\r\n    width: 25px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 0;\r\n    color: #fff !important;\r\n}\r\n.accordion-button::after{\r\n    content: \"\\F286\";\r\n    font-family: bootstrap-icons !important;\r\n    border-radius: 50% !important;\r\n    background: #662D91;\r\n    font-size: 18px;\r\n    border-radius: 50%;\r\n    height: 25px;\r\n    width: 25px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding: 0;\r\n    color: #fff !important;\r\n}\r\n.level-nav{\r\n    padding: 19px 0;\r\n    left: 0px;\r\n    top: 0px;\r\n    background: #662D91;\r\n    margin-bottom: 8px;\r\n}\r\n.accordion-item{\r\n    background: #F5F5F5;\r\n}\r\n.footer-level-img{\r\n    margin-top: 50px;\r\n    background-image: url('level-footer.png');\r\n    height: 474px;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    background-position: left;\r\n  }\r\n.footer{\r\n    display: flex;\r\n    justify-content: right;\r\n}\r\n/* .content{\r\n    position: absolute !important;\r\n    margin: 2%;\r\n    bottom: 2%;\r\n    color: #fff;\r\n} */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsd0hBQXdIO0FBQ3hIO0lBQ0ksU0FBUztJQUNULFVBQVU7SUFDVixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLGNBQWM7SUFDZCxnQ0FBZ0M7SUFDaEMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLGdDQUFnQztBQUNwQztBQUNBO0lBQ0ksc0NBQXNDO0lBQ3RDLDhCQUE4Qjs7QUFFbEM7QUFDQTtJQUNJLDhCQUE4QjtJQUM5Qix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLDJCQUEyQjtBQUMvQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSwwQkFBMEI7QUFDOUI7QUFDQTtJQUNJLDhCQUE4QjtJQUM5Qix5QkFBeUI7SUFDekIsMkJBQTJCO0lBQzNCLCtCQUErQjtBQUNuQztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLHVDQUF1QztJQUN2Qyw2QkFBNkI7SUFDN0IsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFdBQVc7SUFDWCxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1Ysc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsdUNBQXVDO0lBQ3ZDLDZCQUE2QjtJQUM3QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGVBQWU7SUFDZixTQUFTO0lBQ1QsUUFBUTtJQUNSLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLHlDQUF1RDtJQUN2RCxhQUFhO0lBQ2IsNEJBQTRCO0lBQzVCLHNCQUFzQjtJQUN0Qix5QkFBeUI7RUFDM0I7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTs7Ozs7R0FLRyIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RUIrR2FyYW1vbmQmZmFtaWx5PUludGVyJmZhbWlseT1Sb2JvdG86d2dodEAzMDA7NDAwJmRpc3BsYXk9c3dhcCcpO1xyXG5ib2R5ICwgaHRtbHtcclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgYmFja2dyb3VuZDogI0Y1RjVGNTtcclxuICAgIGNvbG9yOiAjMDAwMDAwO1xyXG4gICAgZm9udC1mYW1pbHk6ICdJbnRlcicsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogNDAwO1xyXG59XHJcbi5mcy0xNHtcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG4uZmxleC1jZW50ZXJ7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbi5mdy03MDB7XHJcbiAgICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcbi5jdXJzb3J7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbn1cclxuLnRleHQtbGVmdHtcclxuICAgIHRleHQtYWxpZ246IHN0YXJ0ICFpbXBvcnRhbnQ7XHJcbn1cclxuYXtcclxuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZSAhaW1wb3J0YW50O1xyXG59XHJcbi5yb3ctZGlje1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdy1yZXZlcnNlICFpbXBvcnRhbnQ7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBcclxufVxyXG4uY2x7XHJcbiAgICBiYWNrZ3JvdW5kOiAjRjJFRUY0ICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogIzMzMzMzMyAhaW1wb3J0YW50O1xyXG59XHJcbi5iZy1jb2xvcntcclxuICAgIGJhY2tncm91bmQ6ICNGNUY1RjU7XHJcbn1cclxuLnctMjN7XHJcbiAgICB3aWR0aDogMjMlO1xyXG59XHJcbi5tdC0tNjh7XHJcbiAgICBtYXJnaW4tdG9wOiAtNjhweCAhaW1wb3J0YW50O1xyXG59XHJcbi5tdC02OHtcclxuICAgIG1hcmdpbi10b3A6IDY4cHggIWltcG9ydGFudDtcclxufVxyXG4udy03NHtcclxuICAgIHdpZHRoOiA3NCU7XHJcbn1cclxuaDUsIC5oNSB7XHJcbiAgICBmb250LXNpemU6IDFyZW0gIWltcG9ydGFudDtcclxufVxyXG4ubmF2LXBpbGxzIC5uYXYtbGluay5hY3RpdmV7XHJcbiAgICBiYWNrZ3JvdW5kOiAjY2JiMWRmICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogIzY2MkQ5MSAhaW1wb3J0YW50O1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMCAhaW1wb3J0YW50O1xyXG4gICAgYm9yZGVyLXJhZGl1czogdW5zZXQgIWltcG9ydGFudDtcclxufVxyXG5cclxuLmJnLWJvcmRlcntcclxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDOEJBRDI7XHJcbiAgICBib3JkZXItcmFkaXVzOiA4cHg7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG4uYWNjb3JkaW9uLWl0ZW17XHJcbiAgICBib3JkZXI6IG5vbmUgIWltcG9ydGFudDtcclxufVxyXG4uYWNjb3JkaW9uLWJ1dHRvbjpub3QoLmNvbGxhcHNlZCk6OmFmdGVye1xyXG4gICAgY29udGVudDogXCJcXEYyODZcIjtcclxuICAgIGZvbnQtZmFtaWx5OiBib290c3RyYXAtaWNvbnMgIWltcG9ydGFudDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJSAhaW1wb3J0YW50O1xyXG4gICAgYmFja2dyb3VuZDogIzY2MkQ5MTtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcclxuICAgIGhlaWdodDogMjVweDtcclxuICAgIHdpZHRoOiAyNXB4O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBjb2xvcjogI2ZmZiAhaW1wb3J0YW50O1xyXG59XHJcbi5hY2NvcmRpb24tYnV0dG9uOjphZnRlcntcclxuICAgIGNvbnRlbnQ6IFwiXFxGMjg2XCI7XHJcbiAgICBmb250LWZhbWlseTogYm9vdHN0cmFwLWljb25zICFpbXBvcnRhbnQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCUgIWltcG9ydGFudDtcclxuICAgIGJhY2tncm91bmQ6ICM2NjJEOTE7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbiAgICBoZWlnaHQ6IDI1cHg7XHJcbiAgICB3aWR0aDogMjVweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG4gICAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcclxufVxyXG4ubGV2ZWwtbmF2e1xyXG4gICAgcGFkZGluZzogMTlweCAwO1xyXG4gICAgbGVmdDogMHB4O1xyXG4gICAgdG9wOiAwcHg7XHJcbiAgICBiYWNrZ3JvdW5kOiAjNjYyRDkxO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogOHB4O1xyXG59XHJcbi5hY2NvcmRpb24taXRlbXtcclxuICAgIGJhY2tncm91bmQ6ICNGNUY1RjU7XHJcbn1cclxuLmZvb3Rlci1sZXZlbC1pbWd7XHJcbiAgICBtYXJnaW4tdG9wOiA1MHB4O1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4vLi4vYXNzZXRzL2ltZy9sZXZlbC1mb290ZXIucG5nKTtcclxuICAgIGhlaWdodDogNDc0cHg7XHJcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGxlZnQ7XHJcbiAgfVxyXG4gIC5mb290ZXJ7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiByaWdodDtcclxufVxyXG4vKiAuY29udGVudHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZSAhaW1wb3J0YW50O1xyXG4gICAgbWFyZ2luOiAyJTtcclxuICAgIGJvdHRvbTogMiU7XHJcbiAgICBjb2xvcjogI2ZmZjtcclxufSAqLyJdfQ== */";
 
     /***/
   },
@@ -567,10 +609,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
     /* harmony import */
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-    var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__( /*! jquery */"./node_modules/jquery/dist/jquery.js");
-    /* harmony import */
-    var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
     var AppComponent = /*#__PURE__*/function () {
       function AppComponent() {
         _classCallCheck(this, AppComponent);
@@ -583,11 +621,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(AppComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          jquery__WEBPACK_IMPORTED_MODULE_2___default()(document).ready(function () {
-            jquery__WEBPACK_IMPORTED_MODULE_2___default()('.btnNext').click(function () {
-              jquery__WEBPACK_IMPORTED_MODULE_2___default()('.active').next('.nav-link').trigger('click');
-            });
-          });
+          // $(document).ready(function() {
+          //   $('.btnNext').click(function(){
+          //     $('.active').next('.nav-link').trigger('click');
+          //     });
+          // });
         }
       }]);
       return AppComponent;
@@ -625,15 +663,187 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__( /*! ./app-routing.module */"./src/app/app-routing.module.ts");
     /* harmony import */
     var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__( /*! ./app.component */"./src/app/app.component.ts");
+    /* harmony import */
+    var _hindi_version_hindi_version_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__( /*! ./hindi-version/hindi-version.component */"./src/app/hindi-version/hindi-version.component.ts");
+    /* harmony import */
+    var _tamil_version_tamil_version_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__( /*! ./tamil-version/tamil-version.component */"./src/app/tamil-version/tamil-version.component.ts");
     var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
     });
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _hindi_version_hindi_version_component__WEBPACK_IMPORTED_MODULE_5__["HindiVersionComponent"], _tamil_version_tamil_version_component__WEBPACK_IMPORTED_MODULE_6__["TamilVersionComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+
+    /***/
+  },
+
+  /***/"./src/app/hindi-version/hindi-version.component.ts":
+  /*!**********************************************************!*\
+    !*** ./src/app/hindi-version/hindi-version.component.ts ***!
+    \**********************************************************/
+  /*! exports provided: HindiVersionComponent */
+  /***/
+  function srcAppHindiVersionHindiVersionComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+    __webpack_require__.d(__webpack_exports__, "HindiVersionComponent", function () {
+      return HindiVersionComponent;
+    });
+    /* harmony import */
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
+    var HindiVersionComponent = /*#__PURE__*/function () {
+      function HindiVersionComponent() {
+        _classCallCheck(this, HindiVersionComponent);
+        this.title = 'speak-with-me';
+        this.exploreandlearn = true;
+        this.learnandplay = false;
+        this.playgame = false;
+        this.videohelp = false;
+        this.getFingerPrintJsId = function () {
+          var fpDetails_v2 = localStorage.getItem("did");
+          return fpDetails_v2;
+        };
+      }
+      _createClass(HindiVersionComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          // $(document).ready(function() {
+          //   $('.btnNext').click(function(){
+          //     $('.active').next('.nav-link').trigger('click');
+          //     });
+          // });
+        }
+      }, {
+        key: "showExploreandLearn",
+        value: function showExploreandLearn() {
+          this.exploreandlearn = true;
+          this.learnandplay = false;
+          this.playgame = false;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showLearnandplay",
+        value: function showLearnandplay() {
+          this.exploreandlearn = false;
+          this.learnandplay = true;
+          this.playgame = false;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showPlaygame",
+        value: function showPlaygame() {
+          this.exploreandlearn = false;
+          this.learnandplay = false;
+          this.playgame = true;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showVideoHelp",
+        value: function showVideoHelp() {
+          this.exploreandlearn = false;
+          this.learnandplay = false;
+          this.playgame = false;
+          this.videohelp = true;
+        }
+      }]);
+      return HindiVersionComponent;
+    }();
+    HindiVersionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-hindi-version',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! raw-loader!./hindi-version.component.html */"./node_modules/raw-loader/dist/cjs.js!./src/app/hindi-version/hindi-version.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! ../app.component.css */"./src/app/app.component.css"))["default"]]
+    })], HindiVersionComponent);
+
+    /***/
+  },
+
+  /***/"./src/app/tamil-version/tamil-version.component.ts":
+  /*!**********************************************************!*\
+    !*** ./src/app/tamil-version/tamil-version.component.ts ***!
+    \**********************************************************/
+  /*! exports provided: TamilVersionComponent */
+  /***/
+  function srcAppTamilVersionTamilVersionComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+    __webpack_require__.d(__webpack_exports__, "TamilVersionComponent", function () {
+      return TamilVersionComponent;
+    });
+    /* harmony import */
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__( /*! tslib */"./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__( /*! @angular/core */"./node_modules/@angular/core/fesm2015/core.js");
+    var TamilVersionComponent = /*#__PURE__*/function () {
+      function TamilVersionComponent() {
+        _classCallCheck(this, TamilVersionComponent);
+        this.title = 'speak-with-me';
+        this.exploreandlearn = true;
+        this.learnandplay = false;
+        this.playgame = false;
+        this.videohelp = false;
+        this.getFingerPrintJsId = function () {
+          var fpDetails_v2 = localStorage.getItem("did");
+          return fpDetails_v2;
+        };
+      }
+      _createClass(TamilVersionComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          // $(document).ready(function() {
+          //   $('.btnNext').click(function(){
+          //     $('.active').next('.nav-link').trigger('click');
+          //     });
+          // });
+        }
+      }, {
+        key: "showExploreandLearn",
+        value: function showExploreandLearn() {
+          this.exploreandlearn = true;
+          this.learnandplay = false;
+          this.playgame = false;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showLearnandplay",
+        value: function showLearnandplay() {
+          this.exploreandlearn = false;
+          this.learnandplay = true;
+          this.playgame = false;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showPlaygame",
+        value: function showPlaygame() {
+          this.exploreandlearn = false;
+          this.learnandplay = false;
+          this.playgame = true;
+          this.videohelp = false;
+        }
+      }, {
+        key: "showVideoHelp",
+        value: function showVideoHelp() {
+          this.exploreandlearn = false;
+          this.learnandplay = false;
+          this.playgame = false;
+          this.videohelp = true;
+        }
+      }]);
+      return TamilVersionComponent;
+    }();
+    TamilVersionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-tamil-version',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! raw-loader!./tamil-version.component.html */"./node_modules/raw-loader/dist/cjs.js!./src/app/tamil-version/tamil-version.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__( /*! ../app.component.css */"./src/app/app.component.css"))["default"]]
+    })], TamilVersionComponent);
 
     /***/
   },
@@ -710,7 +920,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /*! no static exports found */
   /***/
   function _(module, exports, __webpack_require__) {
-    module.exports = __webpack_require__( /*! /home/dell/Documents/git/all-appliance/src/main.ts */"./src/main.ts");
+    module.exports = __webpack_require__( /*! E:\office_work\tekdi_technologies\all-appliance\src\main.ts */"./src/main.ts");
 
     /***/
   }
