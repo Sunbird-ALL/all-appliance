@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.c41b25ee.css",
-    "main.js": "./static/js/main.f464eec7.js",
-    "static/js/27.262d8d9e.chunk.js": "./static/js/27.262d8d9e.chunk.js",
+    "main.css": "./static/css/main.b6977836.css",
+    "main.js": "./static/js/main.ac9528dc.js",
+    "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/p1.png": "./static/media/p1.f42980eb5cb6ff6a3be0.png",
     "static/media/long_para.m4a": "./static/media/long_para.b2f1b49171f253c2cd5c.m4a",
     "static/media/leena_audio.m4a": "./static/media/leena_audio.7cd3f112f1d8095381c5.m4a",
@@ -34,10 +34,13 @@
     "static/media/p2Listen.jpg": "./static/media/p2Listen.004a22bdc284faf9894c.jpg",
     "static/media/p1Word_ta.jpg": "./static/media/p1Word_ta.2fc6905831b7d5bb5748.jpg",
     "index.html": "./index.html",
-    "static/media/refresh.svg": "./static/media/refresh.8c1be5a641e38421bc276e5597e1eaa3.svg"
+    "static/media/refresh.svg": "./static/media/refresh.8c1be5a641e38421bc276e5597e1eaa3.svg",
+    "main.b6977836.css.map": "./static/css/main.b6977836.css.map",
+    "main.ac9528dc.js.map": "./static/js/main.ac9528dc.js.map",
+    "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c41b25ee.css",
-    "static/js/main.f464eec7.js"
+    "static/css/main.b6977836.css",
+    "static/js/main.ac9528dc.js"
   ]
 }
