@@ -25,6 +25,9 @@
                                     id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
                                     type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Play
                                     & Learn</button>
+                                <button (click)="showWordSentenceList()" class="nav-link text-left fs-14 text-black"
+                                    id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+                                    type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Teacher - Manage Content</button>
                                 <button (click)="showPlaygame()" class="nav-link text-left fs-14 text-black"
                                     id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
                                     type="button" role="tab" aria-controls="v-pills-messages"
@@ -45,6 +48,12 @@
                                     role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
                                     <iframe
                                         src="/assets/sb-all/index.html#/proto4/all?source=/assets/sb-all/db/proto4.json"
+                                        frameborder="0" height="600px" width="100%"></iframe>
+                                </div>
+                                <div *ngIf="wordandsentence" class="tab-pane fade p-4 show active" id="v-pills-profile"
+                                    role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                    <iframe
+                                        src="/assets/sb-all/index.html#/content"
                                         frameborder="0" height="600px" width="100%"></iframe>
                                 </div>
                                 <div *ngIf="playgame" class="tab-pane fade p-4 show active" id="v-pills-messages"
