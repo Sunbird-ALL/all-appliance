@@ -16,6 +16,7 @@ export class TamilVersionComponent implements OnInit {
   learnandplay = false;
   playgame = false;
   videohelp = false;
+  wordandsentence  = false;
 
   ngOnInit() {
     // $(document).ready(function() {
@@ -34,6 +35,7 @@ export class TamilVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = false;
     this.videohelp = false;
+    this.wordandsentence = false;
   }
 
   showLearnandplay() {
@@ -41,6 +43,7 @@ export class TamilVersionComponent implements OnInit {
     this.learnandplay = true;
     this.playgame = false;
     this.videohelp = false;
+    this.wordandsentence = false;
   }
 
   showPlaygame() {
@@ -48,6 +51,7 @@ export class TamilVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = true;
     this.videohelp = false;
+    this.wordandsentence = false;
   }
 
   showVideoHelp() {
@@ -55,6 +59,13 @@ export class TamilVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = false;
     this.videohelp = true;
+    this.wordandsentence = false;
   }
-
+  showWordSentenceList() {
+    this.exploreandlearn = false;
+    this.learnandplay = false;
+    this.playgame = false;
+    this.videohelp = false;
+    this.wordandsentence = true;
+  }
 }
