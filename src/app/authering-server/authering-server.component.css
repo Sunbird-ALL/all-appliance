@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Roboto:wght@300;400&display=swap');
+body , html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F5F5F5;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.fs-14{
+    font-size: 14px;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fw-700{
+    font-weight: 700;
+}
+.cursor{
+    cursor: pointer;
+}
+.text-left{
+    text-align: start !important;
+}
+a{
+    text-decoration: none !important;
+}
+.row-dic{
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    
+}
+.cl{
+    background: #F2EEF4 !important;
+    color: #333333 !important;
+}
+.bg-color{
+    background: #F5F5F5;
+}
+.w-23{
+    width: 23%;
+}
+.mt--68{
+    margin-top: -68px !important;
+}
+.mt-68{
+    margin-top: 68px !important;
+}
+.w-74{
+    width: 74%;
+}
+h5, .h5 {
+    font-size: 1rem !important;
+}
+.nav-pills .nav-link.active{
+    background: #cbb1df !important;
+    color: #662D91 !important;
+    font-weight: 700 !important;
+    border-radius: unset !important;
+}
+
+.bg-border{
+    border: 1px solid #C8BAD2;
+    border-radius: 8px;
+    background-color: white;
+}
+.accordion-item{
+    border: none !important;
+}
+.accordion-button:not(.collapsed)::after{
+    content: "\F286";
+    font-family: bootstrap-icons !important;
+    border-radius: 50% !important;
+    background: #662D91;
+    font-size: 18px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff !important;
+}
+.accordion-button::after{
+    content: "\F286";
+    font-family: bootstrap-icons !important;
+    border-radius: 50% !important;
+    background: #662D91;
+    font-size: 18px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff !important;
+}
+.level-nav{
+    padding: 19px 0;
+    left: 0px;
+    top: 0px;
+    background: #662D91;
+    margin-bottom: 8px;
+}
+.accordion-item{
+    background: #F5F5F5;
+}
+.footer-level-img{
+    margin-top: 50px;
+    background-image: url(./../assets/img/level-footer.png);
+    height: 474px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  .footer{
+    display: flex;
+    justify-content: right;
+}
+/* .content{
+    position: absolute !important;
+    margin: 2%;
+    bottom: 2%;
+    color: #fff;
+} */
