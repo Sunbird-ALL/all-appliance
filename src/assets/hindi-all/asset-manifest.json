@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.064a51c7.css",
-    "main.js": "./static/js/main.1ed7f438.js",
-    "static/js/890.91f9f648.chunk.js": "./static/js/890.91f9f648.chunk.js",
+    "main.css": "./static/css/main.f188e409.css",
+    "main.js": "./static/js/main.2fa2d377.js",
     "static/js/787.28cb0dcd.chunk.js": "./static/js/787.28cb0dcd.chunk.js",
     "static/media/p1.png": "./static/media/p1.f42980eb5cb6ff6a3be0.png",
     "static/media/long_para.m4a": "./static/media/long_para.b2f1b49171f253c2cd5c.m4a",
@@ -33,16 +32,19 @@
     "static/media/p1Word.jpg": "./static/media/p1Word.3720edae85d6773e8301.jpg",
     "static/media/p2Listen.jpg": "./static/media/p2Listen.004a22bdc284faf9894c.jpg",
     "static/media/p1Word_ta.jpg": "./static/media/p1Word_ta.2fc6905831b7d5bb5748.jpg",
+    "static/media/Thumbs_Down.svg": "./static/media/Thumbs_Down.98590c1e6a05c722cbda367be06a3e6e.svg",
+    "static/media/Thumbs_up.svg": "./static/media/Thumbs_up.d8d31a8305133caefa59eabd3e759137.svg",
+    "static/media/thumb_down_dis.svg": "./static/media/thumb_down_dis.363408a2928d57e7993df6cafb258472.svg",
+    "static/media/thumb_up_disable.svg": "./static/media/thumb_up_disable.3bde537f4646cffee89df0cece2ccd68.svg",
     "index.html": "./index.html",
     "static/media/mic_play.svg": "./static/media/mic_play.5ff505a883442ff9e439a631ed2cb4e9.svg",
     "static/media/refresh.svg": "./static/media/refresh.8c1be5a641e38421bc276e5597e1eaa3.svg",
-    "main.064a51c7.css.map": "./static/css/main.064a51c7.css.map",
-    "main.1ed7f438.js.map": "./static/js/main.1ed7f438.js.map",
-    "890.91f9f648.chunk.js.map": "./static/js/890.91f9f648.chunk.js.map",
+    "main.f188e409.css.map": "./static/css/main.f188e409.css.map",
+    "main.2fa2d377.js.map": "./static/js/main.2fa2d377.js.map",
     "787.28cb0dcd.chunk.js.map": "./static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.064a51c7.css",
-    "static/js/main.1ed7f438.js"
+    "static/css/main.f188e409.css",
+    "static/js/main.2fa2d377.js"
   ]
 }
