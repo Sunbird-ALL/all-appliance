@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.58d558c4.css",
-    "main.js": "./static/js/main.c6e4e3a8.js",
+    "main.js": "./static/js/main.60432f80.js",
     "static/js/787.f8217a87.chunk.js": "./static/js/787.f8217a87.chunk.js",
     "static/media/turn2.png": "./static/media/turn2.4b40ec04128a619ac2d9.png",
     "static/media/turn1.png": "./static/media/turn1.00ecc8a971f1eda97011.png",
@@ -74,11 +74,11 @@
     "static/media/mobileGameBar.svg": "./static/media/mobileGameBar.f8996823297078247341e8029e055df8.svg",
     "index.html": "./index.html",
     "main.58d558c4.css.map": "./static/css/main.58d558c4.css.map",
-    "main.c6e4e3a8.js.map": "./static/js/main.c6e4e3a8.js.map",
+    "main.60432f80.js.map": "./static/js/main.60432f80.js.map",
     "787.f8217a87.chunk.js.map": "./static/js/787.f8217a87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58d558c4.css",
-    "static/js/main.c6e4e3a8.js"
+    "static/js/main.60432f80.js"
   ]
 }
