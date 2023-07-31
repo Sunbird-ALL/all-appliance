@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'hi', component: HindiVersionComponent },
   { path: 'authoring-local', component: AutheringLocalComponent },
   { path: 'authoring-server', component: AutheringServerComponent },
-  { path: 'sb-editor', component: ContentEditorComponent }
+  { path: 'editor', component: ContentEditorComponent }
 ];
 
 @NgModule({

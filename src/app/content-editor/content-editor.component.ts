@@ -76,15 +76,12 @@ export class ContentEditorComponent implements OnInit, OnDestroy {
 
   private setRenderer() {
     this.renderer.listen('window', 'editor:metadata:edit', () => {
-      alert()
       this.closeModal();
     });
     this.renderer.listen('window', 'editor:window:close', () => {
-      alert()
       this.closeModal();
     });
     this.renderer.listen('window', 'editor:content:review', () => {
-      alert()
       this.closeModal();
     });
   }
@@ -118,40 +115,17 @@ export class ContentEditorComponent implements OnInit, OnDestroy {
   private setWindowContext() {
     window.context = _.cloneDeep({
       "user": {
-        "id": "5a587cc1-e018-4859-a0a8-e842650b9d64",
-        "name": "Gourav"
+        "id": "test_001",
+        "name": "Demo-User"
       },
-      "did": "5d498109ff49c0d81a66921555309496",
-      "sid": "WgmuuWmXDsk6ZaMj27t_9t8HtjNwykH0",
       "contentId": "do_113536016074268672144",
       "pdata": {
-        "id": "dev.sunbird.portal",
-        "ver": "4.9.0",
-        "pid": "sunbird-portal.contenteditor"
+        "id": "all-app",
+        "ver": "0.0.1",
+        "pid": "all-app.editor"
       },
-      "contextRollUp": {
-        "l1": "01309282781705830427",
-        "l2": "01274256635219968039517"
-      },
-      "tags": [
-        "01309282781705830427",
-        "01274256635219968039517",
-        "01309282781705830427"
-      ],
-      "channel": "01309282781705830427",
-      "framework": "knowlg_k-12",
-      "ownershipType": ["createdBy", "createdFor"],
-      "timeDiff": -280.363,
-      "uid": "5a587cc1-e018-4859-a0a8-e842650b9d64",
-      "etags": {
-        "app": [],
-        "partner": [],
-        "dims": []
-      }
+      "channel": "test_channel"
     });
-    if (this.queryParams.identifier) {
-      window.context.contentId = this.queryParams.identifier;
-    }
   }
 
   private setWindowConfig() {
@@ -164,22 +138,21 @@ export class ContentEditorComponent implements OnInit, OnDestroy {
       plugins: [
         { 'id': 'org.ekstep.ceheader', 'ver': '1.0', 'type': 'plugin' },
          { 'id': 'org.ekstep.editcontentmeta', 'ver': '1.2', 'type': 'plugin' },
-        { 'id': 'org.ekstep.video', 'ver': '1.0', 'type': 'plugin' },
-        { 'id': 'org.ekstep.assessmentbrowser', 'ver': '1.1', 'type': 'plugin' },
+        // { 'id': 'org.ekstep.assessmentbrowser', 'ver': '1.1', 'type': 'plugin' },
       { 'id': 'org.ekstep.colorpicker', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.stage', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.text', 'ver': '1.2', 'type': 'plugin' },
       { 'id': 'org.ekstep.shape', 'ver': '1.0', 'type': 'plugin' },
-      { 'id': 'org.ekstep.video', 'ver': '1.5', 'type': 'plugin' },
-      { 'id': 'org.ekstep.image', 'ver': '1.1', 'type': 'plugin' },
-      { 'id': 'org.ekstep.audio', 'ver': '1.1', 'type': 'plugin' },
+      // { 'id': 'org.ekstep.video', 'ver': '1.5', 'type': 'plugin' },
+      // { 'id': 'org.ekstep.image', 'ver': '1.1', 'type': 'plugin' },
+      // { 'id': 'org.ekstep.audio', 'ver': '1.1', 'type': 'plugin' },
       { 'id': 'org.ekstep.hotspot', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.scribblepad', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.stageconfig', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.config', 'ver': '1.0', 'type': 'plugin' },
-    //   { 'id': 'org.ekstep.telemetry', 'ver': '1.0', 'type': 'plugin' },
+      { 'id': 'org.ekstep.telemetry', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.preview', 'ver': '1.2', 'type': 'plugin' },
-      { 'id': 'org.ekstep.activitybrowser', 'ver': '1.3', 'type': 'plugin' },
+      // { 'id': 'org.ekstep.activitybrowser', 'ver': '1.3', 'type': 'plugin' },
       { 'id': 'org.ekstep.download', 'ver': '1.1', 'type': 'plugin' },
       { 'id': 'org.ekstep.unsupported', 'ver': '1.0', 'type': 'plugin' },
       { 'id': 'org.ekstep.wordinfobrowser', 'ver': '1.0', 'type': 'plugin' },
