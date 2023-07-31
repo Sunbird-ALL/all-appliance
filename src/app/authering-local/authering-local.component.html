@@ -24,13 +24,10 @@
                                 <button (click)="showLearnandplay()" class="nav-link text-left fs-14 text-black"
                                     id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
                                     type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Teacher section</button>
-                                <!-- <button (click)="showPlaygame()" class="nav-link text-left fs-14 text-black"
+                                <button (click)="showPlaygame()" class="nav-link text-left fs-14 text-black"
                                     id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
                                     type="button" role="tab" aria-controls="v-pills-messages"
-                                    aria-selected="false">Content editor</button>
-                                <button (click)="showVideoHelp()" class="nav-link text-left fs-14 text-black"
-                                    id="v-pills-video-tab" data-bs-toggle="pill" data-bs-target="#v-pills-video"
-                                    type="button" role="tab" aria-controls="v-pills-video" aria-selected="false">Content player</button> -->
+                                    aria-selected="false">Content player</button>
                             </div>
                             <div class="tab-content bg-white w-74" id="v-pills-tabContent">
                                 <div *ngIf="exploreandlearn" class="tab-pane p-4 fade show active" id="v-pills-home"
@@ -45,16 +42,10 @@
                                         src="/assets/local-authoring/index.html#/content"
                                         frameborder="0" height="600px" width="100%"></iframe>
                                 </div>
-                                <!-- <div *ngIf="playgame" class="tab-pane fade p-4 show active" id="v-pills-messages"
+                                <div *ngIf="playgame" class="tab-pane fade p-4 show active" id="v-pills-messages"
                                     role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                                    <iframe src="/assets/games/index.html" frameborder="0" height="600px"
-                                        width="100%"></iframe>
+                                    <app-player></app-player>
                                 </div>
-                                <div *ngIf="videohelp" class="tab-pane fade p-4 show active" id="v-pills-video"
-                                    role="tabpanel" aria-labelledby="v-pills-video-tab" tabindex="0">
-                                    <iframe src="/assets/explore_and_learn.mp4" frameborder="0" height="600px"
-                                        width="100%"></iframe>
-                                </div> -->
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,13 @@
+#contentEditor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%!important;
+    height: 100%;
+    z-index: 9999;
+    border-radius: 0;
+    overflow: hidden;
+  }iframe{
+    width: 100%!important;
+}

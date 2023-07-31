@@ -19,6 +19,9 @@
       "dom"
     ]
   },
+  "files": [
+    "src/globals.d.ts"
+  ],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true

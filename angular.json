@@ -21,12 +21,27 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets/preview/",
+                "output": "/preview/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/plugins/",
+                "output": "plugins/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/content-editor/",
+                "output": "content-editor/"
+              }
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.min.js"]
           },
           "configurations": {
             "production": {
