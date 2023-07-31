@@ -10,7 +10,7 @@ import { KannadaVersionComponent } from './kannada-version/kannada-version.compo
 const routes: Routes = [
   { path: '', component: TamilVersionComponent },
   { path: 'hi', component: HindiVersionComponent },
-  { path: 'ka', component: KannadaVersionComponent },
+  { path: 'kn', component: KannadaVersionComponent },
 
   { path: 'authoring-local', component: AutheringLocalComponent },
   { path: 'authoring-server', component: AutheringServerComponent }
