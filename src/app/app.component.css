@@ -60,6 +60,7 @@ h5, .h5 {
     color: #662D91 !important;
     font-weight: 700 !important;
     border-radius: unset !important;
+    width: 100% !important;
 }
 
 .bg-border{
@@ -84,6 +85,7 @@ h5, .h5 {
     align-items: center;
     padding: 0;
     color: #fff !important;
+    display:none;
 }
 .accordion-button::after{
     content: "\F286";
