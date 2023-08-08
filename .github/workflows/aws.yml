@@ -1,4 +1,4 @@
-name: Mozhigal Dev Deployment
+name: Appliance Dev Deployment
 
 on:
   push:
@@ -20,8 +20,8 @@ jobs:
 
       - name: Install AWS CLI
         run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
+          sudo DEBIAN_FRONTEND=noninteractive apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y awscli
 
       - name: Configure AWS credentials
         run: |
@@ -37,3 +37,7 @@ jobs:
       - name: Deploy to S3 Bucket
         run: |
           aws s3 sync ./dist/y/ s3://sballappliance
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
