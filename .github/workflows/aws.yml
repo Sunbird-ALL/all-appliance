@@ -36,4 +36,4 @@ jobs:
 
       - name: Deploy to S3 Bucket
         run: |
-          aws s3 sync ./dist/ s3://sballappliance
+          aws s3 sync ./dist/y/ s3://sballappliance
