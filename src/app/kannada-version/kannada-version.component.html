@@ -12,14 +12,14 @@
                       <div class="col-md-9 rounded py-2 tab-content bg-white" id="v-pills-tabContent">
                          <div *ngIf="exploreandlearn" class="tab-pane p-2 fade show active" id="v-pills-home"
                             role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                            <iframe
-                               src="/assets/kannada-all/index.html#/proto3/all?source=/assets/kannada-all/db/kn/proto3.json"
-                               frameborder="0" height="600px" width="100%"></iframe>
+                               <iframe
+                                  src="/assets/kannada-all/index.html#/exploreandlearn?hideNavigation=true&language=kn&source=/assets/kannada-all/db/ka/proto3.json"
+                                  frameborder="0" height="600px" width="100%"></iframe>                                    
                          </div>
                          <div *ngIf="learnandplay" class="tab-pane fade p-2 show active" id="v-pills-profile"
                             role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                            <iframe
-                               src="/assets/kannada-all/index.html#/proto4/all?source=/assets/kannada-all/db/proto4.json"
+                               <iframe
+                               src="/assets/kannada-all/index.html#/playandlearn?hideNavigation=true&language=kn&source=/assets/kannada-all/db/playAndLearn/proto4.json"
                                frameborder="0" height="600px" width="100%"></iframe>
                          </div>
                          <div *ngIf="playgame" class="tab-pane fade p-2 show active" id="v-pills-messages"
