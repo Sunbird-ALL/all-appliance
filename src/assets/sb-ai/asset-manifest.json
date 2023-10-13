@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.dae13e7b.css",
-    "main.js": "./static/js/main.2059c210.js",
+    "main.js": "./static/js/main.d0878ab2.js",
     "static/js/890.91f9f648.chunk.js": "./static/js/890.91f9f648.chunk.js",
     "static/media/p1.png": "./static/media/p1.f42980eb5cb6ff6a3be0.png",
     "static/media/a3_ta.mpga": "./static/media/a3_ta.96c415e882782486b2f5.mpga",
@@ -21,8 +21,8 @@
     "static/media/a1_en.m4a": "./static/media/a1_en.9262b3eff4d0a0bac776.m4a",
     "static/media/next.png": "./static/media/next.c135a8c338ec6ad702d4.png",
     "static/media/SentencePage.jpg": "./static/media/SentencePage.1835d80b8eaecdc89873.jpg",
-    "static/media/Thumbs_Down.svg": "./static/media/Thumbs_Down.c5ec1c428c43a0edaad93db2ffeffbd6.svg",
-    "static/media/Thumbs_up.svg": "./static/media/Thumbs_up.c36887c6e405c26ed0716bf0320a69e0.svg",
+    "static/media/Thumbs_up.svg": "./static/media/Thumbs_up.7066d488b28826ea9c3eb2b250ede07e.svg",
+    "static/media/Thumbs_Down.svg": "./static/media/Thumbs_Down.6ded36dbf14ffe781ccf1fc7468e7ec6.svg",
     "static/media/Star.svg": "./static/media/Star.d0d3350b438f43d28908da98542b7a05.svg",
     "static/media/thumb_down_dis.svg": "./static/media/thumb_down_dis.363408a2928d57e7993df6cafb258472.svg",
     "static/media/thumb_up_disable.svg": "./static/media/thumb_up_disable.3bde537f4646cffee89df0cece2ccd68.svg",
@@ -31,11 +31,11 @@
     "static/media/submit.svg": "./static/media/submit.4d60bc7b198cb18768b78a225ce99a82.svg",
     "static/media/refresh.svg": "./static/media/refresh.8c1be5a641e38421bc276e5597e1eaa3.svg",
     "main.dae13e7b.css.map": "./static/css/main.dae13e7b.css.map",
-    "main.2059c210.js.map": "./static/js/main.2059c210.js.map",
+    "main.d0878ab2.js.map": "./static/js/main.d0878ab2.js.map",
     "890.91f9f648.chunk.js.map": "./static/js/890.91f9f648.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dae13e7b.css",
-    "static/js/main.2059c210.js"
+    "static/js/main.d0878ab2.js"
   ]
 }
