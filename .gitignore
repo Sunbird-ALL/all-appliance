@@ -8,6 +8,7 @@
 /bazel-out
 .angular/cache/
 /src/assets/sb-all/
+/src/assets/sb-ai/
 /src/assets/games/
 
 # dependencies
