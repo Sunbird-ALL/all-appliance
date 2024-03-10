@@ -1,0 +1,39 @@
+name: Appliance Dev Deployment
+
+on:
+  push:
+    branches:
+      - all-0.6
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.21.2'
+
+      - name: Install AWS CLI
+        run: |
+          sudo DEBIAN_FRONTEND=noninteractive apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y awscli
+
+      - name: Configure AWS credentials
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set default.region ${{ secrets.AWS_REGION }}
+
+      - name: Build and Package Application
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to S3 Bucket
+        run: |
+          aws s3 sync ./dist/y/ s3://sballappliance
