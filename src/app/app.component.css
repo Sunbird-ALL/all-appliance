@@ -130,3 +130,11 @@ h5, .h5 {
     bottom: 2%;
     color: #fff;
 } */
+
+
+
+/* <!-- Transition for Sidebar --> */
+
+.collapse-horizontal {
+ transition: width .3s, height .3s;
+}
