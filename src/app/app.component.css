@@ -130,3 +130,85 @@ h5, .h5 {
     bottom: 2%;
     color: #fff;
 } */
+
+/* Toggle sidebar */
+
+.ham {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 5%;
+  top: calc(50% - 15px);
+}
+
+.ham::before,
+.ham::after,
+.ham .dash {
+  content: "";
+  position: absolute;
+  top: 30%;
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  transform-origin: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.ham::after {
+  top: 70%;
+}
+
+.ham .dash {
+  top: 50%;
+}
+
+.ham.open::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.ham.open::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.ham.open .dash {
+  opacity: 0;
+}
+
+.row {
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  position: relative;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.row div:nth-child(1) {
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+.row div:nth-child(2) {
+  flex-grow: 1;
+  min-width: 200px;
+  flex-shrink: 3;
+  transition: all 0.5s linear;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* transition-delay: 0ms; */
+  width: max-content;
+}
+
+.hide {
+  max-width: 0 !important;
+  min-width: 0 !important;
+  flex-grow: 0 !important;
+  padding: 0;
+}

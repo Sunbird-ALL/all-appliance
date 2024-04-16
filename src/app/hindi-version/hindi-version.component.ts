@@ -1,17 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import $ from 'jquery'
+import { Component, OnInit } from "@angular/core";
+import $ from "jquery";
 
 @Component({
-  selector: 'app-hindi-version',
-  templateUrl: './hindi-version.component.html',
+  selector: "app-hindi-version",
+  templateUrl: "./hindi-version.component.html",
   // styleUrls: ['./hindi-version.component.css']
-  styleUrls: ['../app.component.css']
+  styleUrls: ["../app.component.css"],
 })
 export class HindiVersionComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  title = 'speak-with-me';
+  title = "speak-with-me";
   exploreandlearn = true;
   learnandplay = false;
   playgame = false;
@@ -23,11 +22,18 @@ export class HindiVersionComponent implements OnInit {
     //     $('.active').next('.nav-link').trigger('click');
     //     });
     // });
+
+    $(document).ready(function () {
+      $(".ham").click(function () {
+        $(".ham").toggleClass("open");
+        $(".sidebar").toggleClass("hide");
+      });
+    });
   }
   public getFingerPrintJsId = () => {
     const fpDetails_v2 = localStorage.getItem("did");
     return fpDetails_v2;
-  }
+  };
 
   showExploreandLearn() {
     this.exploreandlearn = true;
@@ -56,5 +62,4 @@ export class HindiVersionComponent implements OnInit {
     this.playgame = false;
     this.videohelp = true;
   }
-
 }
