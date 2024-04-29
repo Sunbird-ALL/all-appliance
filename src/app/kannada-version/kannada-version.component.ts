@@ -23,6 +23,12 @@ export class KannadaVersionComponent implements OnInit {
     //     $('.active').next('.nav-link').trigger('click');
     //     });
     // });
+    $(document).ready(function () {
+      $(".Sidetoggle").click(function () {
+        $(".Sidetoggle").toggleClass("open");
+        $(".sidebar").toggleClass("hide");
+      });
+    });
   }
   public getFingerPrintJsId = () => {
     const fpDetails_v2 = localStorage.getItem("did");

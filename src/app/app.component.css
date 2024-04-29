@@ -64,7 +64,7 @@ h5, .h5 {
 }
 
 .bg-border{
-    border: 1px solid #C8BAD2;
+    border: 1px solid #bfaecc;
     border-radius: 8px;
     background-color: white;
 }
@@ -84,14 +84,14 @@ h5, .h5 {
     justify-content: center;
     align-items: center;
     padding: 0;
-    color: #fff !important;
+    color: #f7ebeb !important;
     display:none;
 }
 .accordion-button::after{
     content: "\F286";
     font-family: bootstrap-icons !important;
     border-radius: 50% !important;
-    background: #662D91;
+    background: #8023c7;
     font-size: 18px;
     border-radius: 50%;
     height: 25px;
@@ -122,6 +122,7 @@ h5, .h5 {
   }
   .footer{
     display: flex;
+    flex-direction: row;
     justify-content: right;
 }
 /* .content{
@@ -130,3 +131,96 @@ h5, .h5 {
     bottom: 2%;
     color: #fff;
 } */
+  
+  
+  
+  .Sidetoggle .line {
+    top: 50%;
+  }
+  
+  .Sidetoggle.open::before {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .Sidetoggle.open::after {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  .Sidetoggle.open .line {
+    opacity: 0;
+  }
+  
+  .Sidetoggle::before{
+    content: "";
+    position: absolute;
+    top: 30%;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .Sidetoggle::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+    top: 70%;
+  }
+  .Sidetoggle .line {
+    content: "";
+    position: absolute;
+    top: 30%;
+    height: 2px;
+    background-color: white;
+    width: 100%;
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+  }
+  .row {
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .Sidetoggle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5%;
+    top: calc(50% - 15px);
+  }
+  nav {
+    position: relative;
+  }
+  .hide {
+    max-width: 0 !important;
+    min-width: 0 !important;
+    flex-grow: 0 !important;
+    padding: 0;
+  }
+  
+  .sidebar {
+    text-align: center;
+  }
+  
+  .row div:nth-child(1) {
+    flex-grow: 3;
+    flex-shrink: 1;
+  }
+  .row div:nth-child(2) {
+    flex-grow: 1;
+    min-width: 200px;
+    flex-shrink: 3;
+    transition: all 0.5s linear;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: max-content;
+  }
