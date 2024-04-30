@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { log } from 'console';
 
 @Component({
   selector: 'app-test-rig',
@@ -25,6 +24,6 @@ export class TestRigComponent implements OnInit {
 
 
   getIframeUrl() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/sb-all/index.html#/?username=${this.username}&password=${this.password}`)
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/sb-all/?username=${this.username}&password=${this.password}`)
   }
 }

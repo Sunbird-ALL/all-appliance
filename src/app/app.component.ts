@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'speak-with-me';
 
   ngOnInit() {
+    localStorage.clear();
     // $(document).ready(function() {
     //   $('.btnNext').click(function(){
     //     $('.active').next('.nav-link').trigger('click');

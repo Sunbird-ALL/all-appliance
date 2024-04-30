@@ -13,11 +13,11 @@ const routes: Routes = [
   { path: '', component: TamilVersionComponent },
   { path: 'hi', component: HindiVersionComponent },
   { path: 'kn', component: KannadaVersionComponent },
-  { path: 'learner-ai', component: LearnerAiComponent },
+  { path: 'test-rig', component: LearnerAiComponent },
 
   { path: 'authoring-local', component: AutheringLocalComponent },
   { path: 'authoring-server', component: AutheringServerComponent },
-  { path: 'test-rig', component: TestRigComponent },
+  { path: 'learner-ai', component: TestRigComponent },
 ];
 
 @NgModule({
