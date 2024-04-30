@@ -6,6 +6,7 @@ import { AutheringLocalComponent } from './authering-local/authering-local.compo
 import { AutheringServerComponent } from './authering-server/authering-server.component';
 import { KannadaVersionComponent } from './kannada-version/kannada-version.component';
 import { LearnerAiComponent } from './learner-ai/learner-ai.component';
+import { TestRigComponent } from './test-rig/test-rig.component';
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'learner-ai', component: LearnerAiComponent },
 
   { path: 'authoring-local', component: AutheringLocalComponent },
-  { path: 'authoring-server', component: AutheringServerComponent }
+  { path: 'authoring-server', component: AutheringServerComponent },
+  { path: 'test-rig', component: TestRigComponent },
 ];
 
 @NgModule({

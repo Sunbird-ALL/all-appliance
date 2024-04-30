@@ -9,6 +9,7 @@ import { AutheringLocalComponent } from './authering-local/authering-local.compo
 import { AutheringServerComponent } from './authering-server/authering-server.component';
 import { KannadaVersionComponent } from './kannada-version/kannada-version.component';
 import { LearnerAiComponent } from './learner-ai/learner-ai.component';
+import { TestRigComponent } from './test-rig/test-rig.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LearnerAiComponent } from './learner-ai/learner-ai.component';
     AutheringLocalComponent,
     AutheringServerComponent,
     KannadaVersionComponent,
-    LearnerAiComponent
+    LearnerAiComponent,
+    TestRigComponent
   ],
   imports: [
     BrowserModule,
