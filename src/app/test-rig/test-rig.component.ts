@@ -24,6 +24,6 @@ export class TestRigComponent implements OnInit {
 
 
   getIframeUrl() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/sb-all/?username=${this.username}&password=${this.password}`)
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`/assets/sb-all-1.0/?username=${this.username}&password=${this.password}`)
   }
 }
