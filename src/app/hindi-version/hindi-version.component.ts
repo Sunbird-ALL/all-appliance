@@ -12,10 +12,11 @@ export class HindiVersionComponent implements OnInit {
   constructor() { }
 
   title = 'speak-with-me';
-  exploreandlearn = true;
+  exploreandlearn = false;
   learnandplay = false;
   playgame = false;
   videohelp = false;
+  myLearningJourney = true;
 
   ngOnInit() {
     // $(document).ready(function() {
@@ -34,6 +35,7 @@ export class HindiVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = false;
     this.videohelp = false;
+    this.myLearningJourney = false;
   }
 
   showLearnandplay() {
@@ -41,6 +43,7 @@ export class HindiVersionComponent implements OnInit {
     this.learnandplay = true;
     this.playgame = false;
     this.videohelp = false;
+    this.myLearningJourney = false;
   }
 
   showPlaygame() {
@@ -48,6 +51,7 @@ export class HindiVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = true;
     this.videohelp = false;
+    this.myLearningJourney = false;
   }
 
   showVideoHelp() {
@@ -55,6 +59,16 @@ export class HindiVersionComponent implements OnInit {
     this.learnandplay = false;
     this.playgame = false;
     this.videohelp = true;
+    this.myLearningJourney = false;
+  }
+
+
+  showMyLearningJourney() {
+    this.exploreandlearn = false;
+    this.learnandplay = false;
+    this.playgame = false;
+    this.videohelp = false;
+    this.myLearningJourney = true;
   }
 
 }

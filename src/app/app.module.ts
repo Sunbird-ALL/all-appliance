@@ -9,6 +9,9 @@ import { AutheringLocalComponent } from './authering-local/authering-local.compo
 import { AutheringServerComponent } from './authering-server/authering-server.component';
 import { KannadaVersionComponent } from './kannada-version/kannada-version.component';
 import { LearnerAiComponent } from './learner-ai/learner-ai.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { LearnerAiComponent } from './learner-ai/learner-ai.component';
     AutheringLocalComponent,
     AutheringServerComponent,
     KannadaVersionComponent,
-    LearnerAiComponent
+    LearnerAiComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,  
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
