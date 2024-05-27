@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { v4 as uuidv4 } from 'uuid';
 import { config } from 'rxjs';
 
 @Component({
@@ -46,6 +47,7 @@ export class LoginComponent implements OnInit {
           if (response.virtualID) {
             localStorage.setItem("profileName", username);
             localStorage.setItem("virtualId", response.virtualID);
+            localStorage.setItem("contentSessionId", uuidv4());
             this.router.navigate(['/ta']);
           } 
         }
