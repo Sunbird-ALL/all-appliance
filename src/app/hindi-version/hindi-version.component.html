@@ -33,6 +33,12 @@
                                <iframe src="/assets/explore_and_learn.mp4" frameborder="0" height="600px"
                                   width="100%"></iframe>
                             </div>
+                            <div *ngIf="myLearningJourney" class="tab-pane p-4 fade show active" id="v-pills-home"
+                            role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                               <iframe
+                               src="/assets/sb-all/index.html#/"
+                               frameborder="0" height="600px" width="100%"></iframe>
+                         </div>
                          </div>
                          <div class="col-md-3">
                             <h2 class="accordion-header">
@@ -44,7 +50,7 @@
                             <div class="nav flex-column nav-pills bg-border m-4" id="v-pills-tab" role="tablist"
                                aria-orientation="vertical">
                                <button (click)="showExploreandLearn()"
-                                  class="nav-link active text-left fs-14 text-black" id="v-pills-home-tab"
+                                  class="nav-link text-left fs-14 text-black" id="v-pills-home-tab"
                                   data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
                                   aria-controls="v-pills-home" aria-selected="true">Explore & Learn</button>
                                <button (click)="showLearnandplay()" class="nav-link text-left fs-14 text-black"
@@ -59,6 +65,11 @@
                                  id="v-pills-video-tab" data-bs-toggle="pill" data-bs-target="#v-pills-video"
                                  type="button" role="tab" aria-controls="v-pills-video" aria-selected="false">Video
                               help</button>
+                              <button (click)="showMyLearningJourney()"
+                              class="nav-link active text-left fs-14 text-black" id="v-pills-home-tab"
+                              data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+                              aria-controls="v-pills-home" aria-selected="true">My Learning 
+                              Journey</button>
                             </div>
                          </div>
                       </div>

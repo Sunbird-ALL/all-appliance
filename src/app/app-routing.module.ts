@@ -6,16 +6,20 @@ import { AutheringLocalComponent } from './authering-local/authering-local.compo
 import { AutheringServerComponent } from './authering-server/authering-server.component';
 import { KannadaVersionComponent } from './kannada-version/kannada-version.component';
 import { LearnerAiComponent } from './learner-ai/learner-ai.component';
+import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [
-  { path: '', component: TamilVersionComponent },
-  { path: 'hi', component: HindiVersionComponent },
-  { path: 'kn', component: KannadaVersionComponent },
+  { path: 'login', component: LoginComponent }, 
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'ta',  canActivate: [AuthGuard], component: TamilVersionComponent },
+  { path: 'hi',  canActivate: [AuthGuard],component: HindiVersionComponent },
+  { path: 'kn', canActivate: [AuthGuard], component: KannadaVersionComponent },
   { path: 'learner-ai', component: LearnerAiComponent },
-
   { path: 'authoring-local', component: AutheringLocalComponent },
-  { path: 'authoring-server', component: AutheringServerComponent }
+  { path: 'authoring-server', component: AutheringServerComponent },
+  { path: '**', redirectTo: '/login' }
 ];
 
 @NgModule({
