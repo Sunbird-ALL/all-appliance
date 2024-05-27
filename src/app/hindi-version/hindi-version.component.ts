@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import $ from 'jquery'
 
 @Component({
@@ -9,7 +10,9 @@ import $ from 'jquery'
 })
 export class HindiVersionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   title = 'speak-with-me';
   exploreandlearn = false;
@@ -70,5 +73,11 @@ export class HindiVersionComponent implements OnInit {
     this.videohelp = false;
     this.myLearningJourney = true;
   }
+  logout(){
+    localStorage.removeItem("profileName");
+    localStorage.removeItem("virtualId");
+    localStorage.removeItem("sessionId");
+    this.router.navigate(['/login']);
+  }  
 
 }
