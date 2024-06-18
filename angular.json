@@ -26,6 +26,16 @@
                 "glob": "**/*",
                 "input": "src/assets/all-app/static/media/",
                 "output": "./static/media/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/sb-ai/static/media/",
+                "output": "./static/media/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/sb-all/static/media/",
+                "output": "./static/media/"
               }
             ],
             "styles": [
