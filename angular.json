@@ -24,7 +24,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "src/assets/sb-all/static/media/",
+                "input": "src/assets/all-app/static/media/",
                 "output": "./static/media/"
               }
             ],
