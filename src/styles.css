@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family:sans-serif;
+}
+
+
+.container {
+    display: flex;
+  }
+  .box{
+    border:0.5px solid black;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .sidebar {
+    background-color: white; /* Example color, customize as needed */
+    color: white;
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+  }
+  .sidebar h1{
+    color: black;
+    font-size: large;
+  }
+  
+  .sidebar.collapsed {
+    width: 0; /* Completely hide sidebar when collapsed */
+    overflow: hidden;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    border: 2px at;
+    border-radius: 5px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  a:hover{
+    background-color: #dbb0ed;
+    color: #8d2bb7;
+    /* color: #39074f; */
+    
+  }
+  #toggle-button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
