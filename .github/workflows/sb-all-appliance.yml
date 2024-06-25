@@ -1,4 +1,4 @@
-name: Appliance Dev Deployment
+name: Appliance Sandbox Deployment
 
 on:
   push:
