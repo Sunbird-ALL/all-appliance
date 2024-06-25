@@ -38,20 +38,17 @@ export class LoginComponent implements OnInit {
 
     localStorage.clear();
 
-    this.http.get<any>(
-      "https://www.learnerai.theall.ai/v1/vid/generateVirtualID",
-      { params: { username ,password} }
+    this.http.post<any>(
+      `https://www.learnerai.theall.ai/all-orchestration-services/api/virtualId/generateVirtualID?username=${username}`,
+      null
     ).subscribe(
       (response) => {
-        if(response){
-          if (response.virtualID) {
-            localStorage.setItem("profileName", username);
-            localStorage.setItem("virtualId", response.virtualID);
-            localStorage.setItem("contentSessionId", uuidv4());
-            this.router.navigate(['/ta']);
-          } 
-        }
-       else {
+        if (response && response.result.virtualID) {
+          localStorage.setItem("profileName", username);
+          localStorage.setItem("virtualId", response.result.virtualID);
+          localStorage.setItem("contentSessionId", uuidv4());
+          this.router.navigate(['/ta']);
+        } else {
           alert("Enter correct username and password");
         }
       },
