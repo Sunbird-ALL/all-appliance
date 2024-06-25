@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     localStorage.clear();
 
     this.http.get<any>(
-      "https://www.learnerai-dev.theall.ai/v1/vid/generateVirtualID",
+      "https://www.learnerai.theall.ai/v1/vid/generateVirtualID",
       { params: { username ,password} }
     ).subscribe(
       (response) => {
