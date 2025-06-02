@@ -1,6 +1,8 @@
+<app-session-warning-popup [show]="showWarning" [remainingTime]="remainingTime"></app-session-warning-popup>
 <header>
    <nav class="level-nav">
    <div class="right-nav">
+        <span class="session-timer" style="margin-right: 15px; color: #666;">Session expires in: {{remainingTime}}s</span>
         <button class="logout-button" (click)="logout()">Logout</button>
      </div>
    </nav>

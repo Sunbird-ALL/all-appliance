@@ -1,6 +1,8 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import $ from 'jquery';
+import { SessionService } from '../services/session.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-tamil-version',
@@ -8,11 +10,19 @@ import $ from 'jquery';
   // styleUrls: ['./tamil-version.component.css']
   styleUrls: ['../app.component.css']
 })
-export class TamilVersionComponent implements OnInit {
+export class TamilVersionComponent implements OnInit, OnDestroy {
 
   constructor(
-    private router: Router
-  ) { }
+    private router: Router,
+    private sessionService: SessionService
+  ) {
+    this.timerSubscription = this.sessionService.getSessionTimer().subscribe(
+      time => this.remainingTime = time
+    );
+    this.warningSubscription = this.sessionService.getShowWarning().subscribe(
+      show => this.showWarning = show
+    );
+  }
 
   title = 'speak-with-me';
   exploreandlearn = false;
@@ -21,6 +31,10 @@ export class TamilVersionComponent implements OnInit {
   videohelp = false;
   myLearningJourney = true;
   iframeHeight: any = "600px";
+  remainingTime: number = 0;
+  showWarning: boolean = false;
+  private timerSubscription: Subscription;
+  private warningSubscription: Subscription;
 
   /**
    * dispatch telemetry window unload event before browser closes
@@ -38,6 +52,16 @@ export class TamilVersionComponent implements OnInit {
 
     window.addEventListener('message', this.handleMessageEvent.bind(this));
   }
+
+  ngOnDestroy() {
+    if (this.timerSubscription) {
+      this.timerSubscription.unsubscribe();
+    }
+    if (this.warningSubscription) {
+      this.warningSubscription.unsubscribe();
+    }
+  }
+
   public getFingerPrintJsId = () => {
     const fpDetails_v2 = localStorage.getItem("did");
     return fpDetails_v2;
@@ -83,11 +107,8 @@ export class TamilVersionComponent implements OnInit {
     this.myLearningJourney = true;
   }
 
-  logout(){
-    localStorage.removeItem("profileName");
-    localStorage.removeItem("virtualId");
-    localStorage.removeItem("sessionId");
-    this.router.navigate(['/login']);
+  logout() {
+    this.sessionService.endSession();
   }
 
   adjustIframeHeight(charLength: number) {
@@ -109,8 +130,6 @@ export class TamilVersionComponent implements OnInit {
       this.iframeHeight = '1300px';
     }
   }
-
-  
 
   private handleMessageEvent(event: MessageEvent): void {
     console.log(event.data);
