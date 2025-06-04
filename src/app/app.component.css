@@ -149,3 +149,7 @@ h5, .h5 {
   .logout-button:hover {
       background-color: #0056b3;
   }
+
+  .not-allowed{
+    cursor: not-allowed;
+}

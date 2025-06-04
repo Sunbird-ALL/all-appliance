@@ -1,6 +1,8 @@
+<app-session-warning-popup [show]="showWarning" [remainingTime]="remainingTime"></app-session-warning-popup>
 <header>
    <nav class="level-nav">
    <div class="right-nav">
+        <span class="session-timer" style="margin-right: 15px; color: #666;">Session expires in: {{remainingTime}}s</span>
         <button class="logout-button" (click)="logout()">Logout</button>
      </div>
    </nav>
@@ -41,7 +43,7 @@
                             role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
                                <iframe
                                src="/assets/all-app/index.html#/"
-                               frameborder="0" height="600px" width="100%"></iframe>
+                               frameborder="0" [height]="iframeHeight" width="100%"></iframe>
                          </div>
                          </div>
                       </div>
@@ -55,17 +57,17 @@
                          <div class="nav flex-column nav-pills bg-border m-4" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <button (click)="showExploreandLearn()"
-                               class="nav-link text-left fs-14 text-black" id="v-pills-home-tab"
+                               class="nav-link text-left fs-14 not-allowed" id="v-pills-home-tab"
                                data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                               aria-controls="v-pills-home" aria-selected="true">Explore & Learn</button>
-                            <button (click)="showLearnandplay()" class="nav-link text-left fs-14 text-black"
+                               aria-controls="v-pills-home" aria-selected="true" disabled>Explore & Learn</button>
+                            <button (click)="showLearnandplay()" class="nav-link text-left fs-14 not-allowed"
                                id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                               type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Play
+                               type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" disabled>Play
                             & Learn</button>
-                            <button (click)="showPlaygame()" class="nav-link text-left fs-14 text-black"
+                            <button (click)="showPlaygame()" class="nav-link text-left fs-14 not-allowed"
                                id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
                                type="button" role="tab" aria-controls="v-pills-messages"
-                               aria-selected="false">Learn with a Friend</button>
+                               aria-selected="false" disabled>Learn with a Friend</button>
                                <button (click)="showMyLearningJourney()"
                                class="nav-link active text-left fs-14 text-black" id="v-pills-home-tab"
                                data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"

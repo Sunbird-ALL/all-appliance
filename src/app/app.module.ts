@@ -12,6 +12,7 @@ import { LearnerAiComponent } from './learner-ai/learner-ai.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SessionWarningPopupComponent } from './components/session-warning-popup/session-warning-popup.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     AutheringServerComponent,
     KannadaVersionComponent,
     LearnerAiComponent,
-    LoginComponent
+    LoginComponent,
+    SessionWarningPopupComponent
   ],
   imports: [
     BrowserModule,
