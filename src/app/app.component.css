@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter&family=Roboto:wght@300;400&display=swap');
-body , html{
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #F5F5F5;
-    color: #000000;
+    background-color: #f4f7f6;
+    color: #333;
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
 }
+
 .fs-14{
     font-size: 14px;
 }
@@ -55,12 +55,39 @@ a{
 h5, .h5 {
     font-size: 1rem !important;
 }
-.nav-pills .nav-link.active{
-    background: #cbb1df !important;
+.nav-pills .nav-link {
+    color: #495057;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 14px 18px;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #e9e0f2 !important;
     color: #662D91 !important;
-    font-weight: 700 !important;
-    border-radius: unset !important;
-    width: 100% !important;
+    font-weight: 700;
+    border-color: #cbb1df;
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    background-color: #f8f9fa;
+    color: #333;
+    transform: translateX(3px);
+}
+
+.nav-link.not-allowed {
+    cursor: not-allowed;
+    background-color: #f8f9fa;
+    color: #adb5bd;
+    opacity: 1;
+}
+
+.nav-link.not-allowed:hover {
+    transform: none;
 }
 
 .bg-border{
@@ -103,7 +130,7 @@ h5, .h5 {
     color: #fff !important;
 }
 .level-nav{
-    padding: 19px 0;
+    padding: 19px 10px;
     left: 0px;
     top: 0px;
     background: #662D91;
@@ -140,9 +167,11 @@ h5, .h5 {
       background-color: #007bff;
       color: #fff;
       border: none;
-      padding: 10px 10px;
-      border-radius: 4px;
+      padding: 8px 16px;
+      border-radius: 6px;
       cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
       transition: background-color 0.3s ease;
   }
 
@@ -152,4 +181,175 @@ h5, .h5 {
 
   .not-allowed{
     cursor: not-allowed;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Header Styles */
+.main-header {
+    background-color: #662D91;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-logo {
+    height: 32px;
+}
+
+.header-logo-text {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-content {
+    flex: 3;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sidebar-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    align-self: flex-start;
+}
+
+.sidebar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Footer Styles */
+.main-footer {
+    margin-top: 50px;
+}
+
+.footer-level-img {
+    background-image: url(./../assets/img/level-footer.png);
+    height: 250px; /* Reduced height for a more subtle footer */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 8px 15px;
+    }
+
+    .header-logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .logout-button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .sidebar-content {
+        padding: 15px;
+    }
+
+    .sidebar-title {
+        font-size: 1.15rem;
+    }
+
+    .nav-pills .nav-link {
+        padding: 12px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .sidebar-content {
+        padding: 12px;
+    }
+
+    .sidebar-title {
+        font-size: 1.1rem;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+}
+
+/* Responsive iframe container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Default to 1:1 aspect ratio, can be page-specific */
+    height: 0;
+    overflow: hidden;
+    background-color: #e9ecef;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

@@ -1,101 +1,75 @@
-<app-session-warning-popup [show]="showWarning" [remainingTime]="remainingTime"></app-session-warning-popup>
-<header>
-   <nav class="level-nav">
-   <div class="right-nav">
-        <span class="session-timer" style="margin-right: 15px; color: #666;">Session expires in: {{remainingTime}}s</span>
-        <button class="logout-button" (click)="logout()">Logout</button>
-     </div>
-   </nav>
- </header>
- <section class="mt-3">
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-       <div class="accordion-item">
-          <div class="accordion-collapse collapse show">
-             <div class="container-fluid">
-                <div class="accordion-body bg-color">
-                   <div class="row">
-                      <div class="col-md-9">
-                         <div class="tab-content bg-white" id="v-pills-tabContent">
-                            <div *ngIf="exploreandlearn" class="tab-pane p-4 fade show active" id="v-pills-home"
-                               role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                                  <iframe
-                                  src="/assets/sb-all/index.html#/exploreandlearn?hideNavigation=true&language=ta&source=/assets/sb-all/db/ta/proto3.json"
-                                  frameborder="0" height="600px" width="100%"></iframe>
-                            </div>
-                            <div *ngIf="learnandplay" class="tab-pane fade p-4 show active" id="v-pills-profile"
-                               role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">                             
-                                  <iframe
-                                  src="/assets/sb-all/index.html#/playandlearn?hideNavigation=true&language=ta&source=/assets/sb-all/db/playAndLearn/proto4.json"
-                                  frameborder="0" height="600px" width="100%"></iframe>
-                                  
-                            </div>
-                            <div *ngIf="playgame" class="tab-pane fade p-4 show active" id="v-pills-messages"
-                               role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                               <iframe src="/assets/games/index.html" frameborder="0" height="600px"
-                                  width="100%"></iframe>
-                            </div>
-                            <div *ngIf="videohelp" class="tab-pane fade p-4 show active" id="v-pills-video"
-                               role="tabpanel" aria-labelledby="v-pills-video-tab" tabindex="0">
-                               <iframe src="/assets/explore_and_learn.mp4" frameborder="0" height="600px"
-                                  width="100%"></iframe>
-                            </div>
-                            <div *ngIf="myLearningJourney" class="tab-pane p-4 fade show active" id="v-pills-home"
-                            role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                               <iframe
-                               src="/assets/all-app/index.html#/"
-                               frameborder="0" [height]="iframeHeight" width="100%"></iframe>
-                         </div>
-                         </div>
-                      </div>
-                      <div class="col-md-3">
-                         <h2 class="accordion-header">
-                            <button class="accordion-button cl fw-700 ml-2" type="button" data-bs-toggle="collapse"
-                               data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                               aria-controls="panelsStayOpen-collapseOne">Speak with Me
-                            </button>
-                         </h2>
-                         <div class="nav flex-column nav-pills bg-border m-4" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <button (click)="showExploreandLearn()"
-                               class="nav-link text-left fs-14 not-allowed" id="v-pills-home-tab"
-                               data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                               aria-controls="v-pills-home" aria-selected="true" disabled>Explore & Learn</button>
-                            <button (click)="showLearnandplay()" class="nav-link text-left fs-14 not-allowed"
-                               id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                               type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false" disabled>Play
-                            & Learn</button>
-                            <button (click)="showPlaygame()" class="nav-link text-left fs-14 not-allowed"
-                               id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
-                               type="button" role="tab" aria-controls="v-pills-messages"
-                               aria-selected="false" disabled>Learn with a Friend</button>
-                               <button (click)="showMyLearningJourney()"
-                               class="nav-link active text-left fs-14 text-black" id="v-pills-home-tab"
-                               data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                               aria-controls="v-pills-home" aria-selected="true">My Learning 
-                               Journey</button>
-                               <button (click)="showVideoHelp()" class="nav-link text-left fs-14 text-black"
-                              id="v-pills-video-tab" data-bs-toggle="pill" data-bs-target="#v-pills-video"
-                              type="button" role="tab" aria-controls="v-pills-video" aria-selected="false">Video
-                           help</button>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
+<header class="main-header">
+  <nav class="main-nav">
+    <div class="nav-left">
+      <!-- <img src="/assets/img/logo.svg" alt="ALL Logo" class="header-logo"> -->
+      <!-- <div class="header-logo-text">ALL</div> -->
     </div>
- </section>
- <!-- <div class="tab-pane active flex-center w-75 mb-5 mt-3" id="tab1">
-    <a class="btnNext cursor px-5 py-3 rounded bg-primary border-0 text-white fs-4">Next</a>
-    </div> -->
- <footer>
-    <div class="footer-level-img footer" style="position:relative!important"></div>
-    <!-- hitwebcounter Code START -->
-    <span>Visitors Counter: </span>
-    <!-- Start of CuterCounter Code -->
-    <a href="https://www.cutercounter.com/" target="_blank"><img
-       src="https://www.cutercounter.com/hits.php?id=hemxnakfa&nd=6&style=3" border="0" alt="hit counter"></a>
-    <!-- End of CuterCounter Code -->
-    <div>Device Id: {{this.getFingerPrintJsId()}}</div>
- </footer>
+    <div class="nav-right">
+      <!-- <app-session-timer></app-session-timer> -->
+      <button class="logout-button" (click)="logout()">Logout</button>
+    </div>
+  </nav>
+</header>
+<main class="main-content">
+  <div class="content-container">
+    <div class="primary-content">
+      <div class="tab-content bg-white" id="v-pills-tabContent">
+        <div *ngIf="exploreandlearn" class="tab-pane p-4 fade show active" id="v-pills-home" role="tabpanel"
+          aria-labelledby="v-pills-home-tab" tabindex="0">
+          <div class="iframe-container" style="padding-top: 75%;">
+            <iframe
+              src="/assets/sb-all/index.html#/exploreandlearn?hideNavigation=true&language=ta&source=/assets/sb-all/db/ta/proto3.json"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+        <div *ngIf="learnandplay" class="tab-pane fade p-4 show active" id="v-pills-profile" role="tabpanel"
+          aria-labelledby="v-pills-profile-tab" tabindex="0">
+          <div class="iframe-container" style="padding-top: 75%;">
+            <iframe
+              src="/assets/sb-all/index.html#/playandlearn?hideNavigation=true&language=ta&source=/assets/sb-all/db/playAndLearn/proto4.json"
+              frameborder="0"></iframe>
+          </div>
+        </div>
+        <div *ngIf="playgame" class="tab-pane fade p-4 show active" id="v-pills-messages" role="tabpanel"
+          aria-labelledby="v-pills-messages-tab" tabindex="0">
+          <div class="iframe-container" style="padding-top: 75%;">
+            <iframe src="/assets/games/index.html" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div *ngIf="videohelp" class="tab-pane fade p-4 show active" id="v-pills-video" role="tabpanel"
+          aria-labelledby="v-pills-video-tab" tabindex="0">
+          <div class="iframe-container" style="padding-top: 56.25%;">
+            <iframe src="/assets/explore_and_learn.mp4" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div *ngIf="myLearningJourney" class="tab-pane p-4 fade show active" id="v-pills-home" role="tabpanel"
+          aria-labelledby="v-pills-home-tab" tabindex="0">
+          <div class="iframe-container" [style.paddingTop]="iframeHeight">
+            <iframe src="/assets/all-app/index.html#/" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="sidebar-content">
+      <h2 class="sidebar-title">Speak with Me</h2>
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <button (click)="showExploreandLearn()" class="nav-link text-left fs-14 not-allowed" id="v-pills-home-tab"
+          data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+          aria-selected="true" disabled>Explore & Learn</button>
+        <button (click)="showLearnandplay()" class="nav-link text-left fs-14 not-allowed" id="v-pills-profile-tab"
+          data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+          aria-controls="v-pills-profile" aria-selected="false" disabled>Play & Learn</button>
+        <button (click)="showPlaygame()" class="nav-link text-left fs-14 not-allowed" id="v-pills-messages-tab"
+          data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+          aria-controls="v-pills-messages" aria-selected="false" disabled>Learn with a Friend</button>
+        <button (click)="showMyLearningJourney()" class="nav-link active text-left fs-14 text-black"
+          id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+          aria-controls="v-pills-home" aria-selected="true">My Learning Journey</button>
+        <button (click)="showVideoHelp()" class="nav-link text-left fs-14 text-black" id="v-pills-video-tab"
+          data-bs-toggle="pill" data-bs-target="#v-pills-video" type="button" role="tab"
+          aria-controls="v-pills-video" aria-selected="false">Video help</button>
+      </div>
+    </aside>
+  </div>
+</main>

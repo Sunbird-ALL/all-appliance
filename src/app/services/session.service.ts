@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable, interval } from 'rxjs';
   providedIn: 'root'
 })
 export class SessionService {
-  private readonly SESSION_TIMEOUT = 2 * 60 * 1000; // 2 minutes in milliseconds
+  private readonly SESSION_TIMEOUT = 1 * 60 * 1000; // 30 minutes in milliseconds
   private readonly WARNING_TIME = 10 * 1000; // 10 seconds warning
   private readonly SESSION_START_KEY = 'sessionStartTime';
   private sessionTimer$ = new BehaviorSubject<number>(0);
@@ -55,8 +55,8 @@ export class SessionService {
       const remainingTime = this.getRemainingTime();
       this.sessionTimer$.next(remainingTime);
 
-      // Show warning when 10 seconds remaining
-      if (remainingTime <= 10 && !this.warningShown) {
+      // Show warning when the threshold is reached
+      if (remainingTime <= (this.WARNING_TIME / 1000) && !this.warningShown) {
         this.warningShown = true;
         this.showWarning$.next(true);
       }
@@ -103,10 +103,16 @@ export class SessionService {
     if (this.timerInterval) {
       clearInterval(this.timerInterval);
     }
+    
+    // Hide the warning popup
+    this.showWarning$.next(false);
+    this.warningShown = false;
+
     localStorage.removeItem(this.SESSION_START_KEY);
-    localStorage.removeItem('virtualId');
+    localStorage.removeItem('apiToken');
     localStorage.removeItem('profileName');
     localStorage.removeItem('contentSessionId');
+    
     console.log('Your session has expired. Please log in again.');
     this.router.navigate(['/login']);
   }

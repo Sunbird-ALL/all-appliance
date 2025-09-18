@@ -1,0 +1,120 @@
+<div class="demo-container">
+  <div class="demo-header">
+    <h1>🎓 Session Timer Demo</h1>
+    <p class="demo-description">
+      This demo shows how students can understand their session time remaining. 
+      The timer appears in the top-right corner and provides clear visual feedback.
+    </p>
+  </div>
+
+  <div class="demo-content">
+    <div class="demo-section">
+      <h2>📋 Session Information</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">⏱️</div>
+          <div class="info-content">
+            <h3>Session Duration</h3>
+            <p>2 minutes per session</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">⚠️</div>
+          <div class="info-content">
+            <h3>Warning Time</h3>
+            <p>10 seconds before expiry</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🔄</div>
+          <div class="info-content">
+            <h3>Auto Logout</h3>
+            <p>Automatic after expiry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>🎮 Demo Controls</h2>
+      <div class="control-buttons">
+        <button class="btn btn-primary" (click)="startNewSession()">
+          🔄 Start New Session
+        </button>
+        <button class="btn btn-danger" (click)="endSession()">
+          🚪 End Session
+        </button>
+      </div>
+      <div class="status-display">
+        <strong>Current Status:</strong> 
+        <span class="status-badge" [class.active]="getSessionStatus() === 'Active'">
+          {{ getSessionStatus() }}
+        </span>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>📚 Student Guidelines</h2>
+      <div class="guidelines">
+        <div class="guideline-item">
+          <div class="guideline-icon">🟢</div>
+          <div class="guideline-text">
+            <strong>Green Timer:</strong> Plenty of time remaining. Continue your learning activities.
+          </div>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-icon">🟡</div>
+          <div class="guideline-text">
+            <strong>Yellow Timer:</strong> Time is running out. Consider saving your progress.
+          </div>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-icon">🔴</div>
+          <div class="guideline-text">
+            <strong>Red Timer:</strong> Critical time! Complete your current activity quickly.
+          </div>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-icon">💡</div>
+          <div class="guideline-text">
+            <strong>Tip:</strong> The progress bar shows how much of your session time you've used.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="demo-section">
+      <h2>🎯 Features for Students</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>👁️ Visual Feedback</h3>
+          <p>Color-coded timer that changes from green to yellow to red as time runs out</p>
+        </div>
+        <div class="feature-card">
+          <h3>📊 Progress Tracking</h3>
+          <p>Progress bar shows exactly how much session time has been used</p>
+        </div>
+        <div class="feature-card">
+          <h3>⚠️ Smart Warnings</h3>
+          <p>Automatic warnings when session is about to expire</p>
+        </div>
+        <div class="feature-card">
+          <h3>💡 Helpful Tips</h3>
+          <p>Guidance on what to do as session time runs out</p>
+        </div>
+        <div class="feature-card">
+          <h3>📱 Responsive Design</h3>
+          <p>Works perfectly on all devices - desktop, tablet, and mobile</p>
+        </div>
+        <div class="feature-card">
+          <h3>♿ Accessible</h3>
+          <p>Designed with accessibility in mind for all students</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="demo-footer">
+    <p>💡 <strong>Look at the top-right corner</strong> to see the session timer in action!</p>
+  </div>
+</div> 

@@ -45,9 +45,9 @@ export class LoginComponent implements OnInit {
       null
     ).subscribe(
       (response) => {
-        if (response && response.result.virtualID) {
+        if (response && response.result.token) {
           localStorage.setItem("profileName", username);
-          localStorage.setItem("virtualId", response.result.virtualID);
+          localStorage.setItem("apiToken", response.result.token);
           localStorage.setItem("contentSessionId", uuidv4());
           // Start the session
           this.sessionService.startSession();

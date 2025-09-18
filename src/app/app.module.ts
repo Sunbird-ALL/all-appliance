@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SessionWarningPopupComponent } from './components/session-warning-popup/session-warning-popup.component';
+import { SessionTimerComponent } from './components/session-timer/session-timer.component';
+import { SessionTimerDemoComponent } from './components/session-timer-demo/session-timer-demo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SessionWarningPopupComponent } from './components/session-warning-popup
     KannadaVersionComponent,
     LearnerAiComponent,
     LoginComponent,
-    SessionWarningPopupComponent
+    SessionWarningPopupComponent,
+    SessionTimerComponent,
+    SessionTimerDemoComponent
   ],
   imports: [
     BrowserModule,

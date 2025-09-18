@@ -30,7 +30,7 @@ export class TamilVersionComponent implements OnInit, OnDestroy {
   playgame = false;
   videohelp = false;
   myLearningJourney = true;
-  iframeHeight: any = "600px";
+  iframeHeight: any = "100%";
   remainingTime: number = 0;
   showWarning: boolean = false;
   private timerSubscription: Subscription;
@@ -111,40 +111,21 @@ export class TamilVersionComponent implements OnInit, OnDestroy {
     this.sessionService.endSession();
   }
 
-  adjustIframeHeight(charLength: number) {
-    if (charLength >= 0 && charLength <= 100) {
-      this.iframeHeight = "700px";
-    } else if (charLength >= 100 && charLength <= 150) {
-      this.iframeHeight = "800px";
-    } else if (charLength >= 150 && charLength <= 200) {
-      this.iframeHeight = "850px";
-    } else if (charLength >= 200 && charLength <= 300) {
-      this.iframeHeight = "900px";
-    } else if (charLength >= 300 && charLength <= 400) {
-      this.iframeHeight = "980px";
-    } else if (charLength >= 400 && charLength <= 500) {
-      this.iframeHeight = "1000px";
-    } else if (charLength >= 500 && charLength <= 715) {
-      this.iframeHeight = '1250px';
-    } else {
-      this.iframeHeight = '1300px';
-    }
-  }
-
   private handleMessageEvent(event: MessageEvent): void {
     console.log(event.data);
     if (event.data.type === 'stringLengths' && event.data.length) {
-      this.adjustIframeHeight(event.data.length);
+      const charLength = event.data.length;
+      let paddingTop = 100;
+      if (charLength >= 0 && charLength <= 100) {
+        paddingTop = 120;
+      } else if (charLength > 100 && charLength <= 200) {
+        paddingTop = 150;
+      } else if (charLength > 200) {
+        paddingTop = 180;
+      }
+      this.iframeHeight = `${paddingTop}%`;
     } else if (event.data.type === 'restore-iframe-content') {
-      this.iframeHeight = "600px";
+      this.iframeHeight = "100%";
     }
-    // if (event.data.type === 'stringLengths' && event.data.length) {
-    //   this.levelService.sendevent.data({
-    //     type: 'stringLengths',
-    //     length: event.data.length,
-    //   });
-    // } else if (event.data.type === 'restore-iframe-content') {
-    //   this.levelService.sendMessage({ type: 'restore-iframe-content' });
-    // }
   }
 }

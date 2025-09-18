@@ -15,7 +15,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): boolean {
     // Check if user is authenticated and session is valid
-    const isAuthenticated = !!localStorage.getItem('virtualId');
+    const isAuthenticated = !!localStorage.getItem('apiToken');
     const isSessionValid = this.sessionService.isSessionValid();
 
     if (isAuthenticated && isSessionValid) {

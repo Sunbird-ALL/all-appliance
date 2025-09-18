@@ -7,6 +7,7 @@ import { AutheringServerComponent } from './authering-server/authering-server.co
 import { KannadaVersionComponent } from './kannada-version/kannada-version.component';
 import { LearnerAiComponent } from './learner-ai/learner-ai.component';
 import { LoginComponent } from './login/login.component';
+import { SessionTimerDemoComponent } from './components/session-timer-demo/session-timer-demo.component';
 import { AuthGuard } from './auth.guard';
 
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'learner-ai', component: LearnerAiComponent },
   { path: 'authoring-local', component: AutheringLocalComponent },
   { path: 'authoring-server', component: AutheringServerComponent },
+  { path: 'session-timer-demo', component: SessionTimerDemoComponent },
   { path: '**', redirectTo: '/login' }
 ];
 

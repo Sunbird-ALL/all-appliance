@@ -75,7 +75,7 @@ export class HindiVersionComponent implements OnInit {
   }
   logout(){
     localStorage.removeItem("profileName");
-    localStorage.removeItem("virtualId");
+    localStorage.removeItem("apiToken");
     localStorage.removeItem("sessionId");
     this.router.navigate(['/login']);
   }  
